@@ -17,14 +17,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${jetBrainsMono.variable} antialiased`}>
-        {/*main navbar*/}
-        <div
-          className="hidden xl:flex w-[285px] h-screen bg-secondary"
-        >
-          <MainNav />
-        </div>
-        <div>
-          {children}
+        <div className="flex">
+          {/*main navbar*/}
+          <div
+            className="hidden xl:flex w-[285px] h-screen bg-secondary"
+          >
+            <MainNav />
+          </div>
+          <div className="w-full max-w-[1130px] px-[15px] mx-auto bg-secondary">
+            <header>header</header>
+            <div>{children}</div>
+          </div>
         </div>
       </body>
     </html>
