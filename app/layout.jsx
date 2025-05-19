@@ -1,5 +1,5 @@
 import { JetBrains_Mono } from "next/font/google";
-import MainNav from "@/components/MainNav"
+import MainNav from "../components/MainNav"
 import "./globals.css";
 
 const jetBrainsMono = JetBrains_Mono({ 

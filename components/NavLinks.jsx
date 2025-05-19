@@ -32,7 +32,7 @@ export default function NavLinks({containerStyles}) {
                 const isActive = pathname === fileLink.path;
 
                 const charLength = fileLink.path.length;
-                const lineWidth = charLength > 5 ? "after:w-[120%]" : "after:w-[90%]"
+                const lineWidth = charLength > 5 ? "after:w-[105%]" : "after:w-[85%]"
 
                 return (
                     <Link 
@@ -41,12 +41,12 @@ export default function NavLinks({containerStyles}) {
                         className={`
                             relative text-lg capitalize text-accent ${
                                 isActive && `after:content-[''] after:block after:absolute
-                                after:left-0 after:top-1/2 ${lineWidth} after:h-[4px] after:bg-accent
+                                after:left-0 after:top-1/2 ${lineWidth} after:h-[4px] after:bg-tertiary
                                 after:-translate-y-1/2 after:z-0`
                             }
                         `}
                     >
-                        {fileLink.page}
+                        <span className="relative z-10">{fileLink.page}</span>
                     </Link>
                 );
             })}
