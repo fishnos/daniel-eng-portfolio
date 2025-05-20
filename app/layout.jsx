@@ -1,5 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import MainNav from "../components/MainNav"
+import PageTransition from "../components/PageTransitions";
+import ScreenTransition from "../components/ScreenTransition";
 import "./globals.css";
 
 const jetBrainsMono = JetBrains_Mono({ 
@@ -16,19 +18,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable} antialiased`}>
-        <div className="flex">
-          {/*main navbar*/}
-          <div
-            className="hidden xl:flex w-[285px] h-screen bg-secondary"
-          >
-            <MainNav />
+      <body className={`${jetBrainsMono.variable} antialiased overflow-hidden relative`}>
+        <ScreenTransition/>
+        <PageTransition>
+          <div className="flex">
+            {/*main navbar*/}
+            <div
+              className="hidden xl:flex w-[285px] h-screen bg-secondary"
+            >
+              <MainNav />
+            </div>
+            <div className="w-full max-w-[1130px] px-[15px] mx-auto">
+              <header>
+                header
+              </header>
+              <div>{children}</div>
+            </div>
           </div>
-          <div className="w-full max-w-[1130px] px-[15px] mx-auto bg-secondary">
-            <header>header</header>
-            <div>{children}</div>
-          </div>
-        </div>
+        </PageTransition>
       </body>
     </html>
   );

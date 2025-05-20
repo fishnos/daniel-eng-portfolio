@@ -16,6 +16,8 @@
   --color-accent-hover: #4d4c4a;
   --color-tertiary: #adcad0;
   --color-tertiary-hover: #c5e5ec;
+  --color-quaternary: #ee9041;
+  --color-quaternary-hover: #f4a867;
 
   /*fonts*/
   --font-primary: "JetBrains Mono";
