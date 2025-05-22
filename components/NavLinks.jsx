@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
+import TextTransition from './TextTransition';
 
 const links = [
     {
@@ -39,14 +40,15 @@ export default function NavLinks({ containerStyles }) {
                         href={fileLink.path} 
                         key={index}
                         className={`
-                            relative text-lg capitalize text-accent ${
+                            relative text-lg uppercase text-primary
+                            ${/* ${
                                 isActive && `after:content-[''] after:block after:absolute
                                 after:left-0 after:top-1/2 ${lineWidth} after:h-[4px] after:bg-primary
                                 after:-translate-y-1/2 after:z-0`
-                            }
+                            } */""}
                         `}
                     >
-                        <span className="relative z-10">{fileLink.page}</span>
+                        <span className={`relative z-10 ${isActive ? "text-quaternary" : "text-accent"}`}>{fileLink.page}</span>
                     </Link>
                 );
             })}

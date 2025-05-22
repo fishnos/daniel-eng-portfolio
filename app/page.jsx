@@ -22,7 +22,7 @@ export default function Home() {
           homepage
         </div>
         <div className="flex-1">
-          image of me :)
+          image
         </div>
       </div>
     </motion.section>
