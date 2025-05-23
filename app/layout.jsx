@@ -1,4 +1,4 @@
-import { JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, Geist } from "next/font/google";
 import MainNav from "../components/MainNav"
 import PageTransition from "../components/PageTransitions";
 import ScreenTransition from "../components/ScreenTransition";
@@ -11,6 +11,12 @@ const jetBrainsMono = JetBrains_Mono({
   variable: '--font-jetbrainsMono'
 })
 
+const geist = Geist({
+  subsets: ['latin'],
+  weight: ['100','200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-geist'
+})
+
 export const metadata = {
   title: "Daniel's Portfolio",
   description: "Made by Daniel Kosukhin",
@@ -19,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable} antialiased overflow-hidden relative`}>
+      <body className={`${geist.variable} antialiased overflow-hidden relative`}>
         <ScreenTransition/>
         <PageTransition>
           <div className="flex">
@@ -36,7 +42,7 @@ export default function RootLayout({ children }) {
                 height: '100vh',
                 borderColor: 'var(--color-accent)',
                 opacity: 1,
-                borderWidth: '1px'
+                borderWidth: '0.5px'
               }} 
             />
             <div className="w-full max-w-[1130px] px-[15px] mx-auto">

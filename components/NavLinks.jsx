@@ -32,15 +32,15 @@ export default function NavLinks({ containerStyles }) {
             {links.map((fileLink, index) => {
                 const isActive = pathname === fileLink.path;
 
-                const charLength = fileLink.path.length;
-                const lineWidth = charLength > 5 ? "after:w-[105%]" : "after:w-[85%]"
+                // const charLength = fileLink.path.length;
+                // const lineWidth = charLength > 5 ? "after:w-[105%]" : "after:w-[85%]"
 
                 return (
                     <Link 
                         href={fileLink.path} 
                         key={index}
                         className={`
-                            relative text-lg uppercase text-primary
+                            relative text-lg uppercase text-primary font-bold
                             ${/* ${
                                 isActive && `after:content-[''] after:block after:absolute
                                 after:left-0 after:top-1/2 ${lineWidth} after:h-[4px] after:bg-primary
