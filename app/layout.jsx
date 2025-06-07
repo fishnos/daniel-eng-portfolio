@@ -2,6 +2,7 @@ import { JetBrains_Mono, Geist } from "next/font/google";
 import MainNav from "../components/MainNav"
 import PageTransition from "../components/PageTransitions";
 import ScreenTransition from "../components/ScreenTransition";
+import CustomCursor from "../components/CustomCursor";
 import { Divider } from "@mui/material";
 import "./globals.css";
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geist.variable} antialiased overflow-hidden relative`}>
+        <CustomCursor />
         <ScreenTransition/>
         <PageTransition>
           <div className="flex">

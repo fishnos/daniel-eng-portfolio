@@ -48,7 +48,7 @@ export default function NavLinks({ containerStyles }) {
                             } */""}
                         `}
                     >
-                        <span className={`relative z-10 ${isActive ? "text-quaternary" : "text-accent"}`}>{fileLink.page}</span>
+                        <span className={`relative z-10 ${isActive ? "text-secondary" : "text-accent"}`}>{fileLink.page}</span>
                     </Link>
                 );
             })}

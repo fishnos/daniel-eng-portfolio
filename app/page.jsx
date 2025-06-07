@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Blob from '../components/Blob'
 
 export default function Home() {
   return (
@@ -18,11 +20,10 @@ export default function Home() {
       className="h-screen flex items-center"
     >
       <div className="flex flex-col w-full justify-between items-center xl:flex-row">
-        <div className="w-full">
+        <div className="w-full xl:w-[550px]">
           homepage
         </div>
-        <div className="flex-1">
-          image
+        <div className="flex-1 hidden xl:flex relative z-20">
         </div>
       </div>
     </motion.section>

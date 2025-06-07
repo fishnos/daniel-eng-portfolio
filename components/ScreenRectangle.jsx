@@ -50,11 +50,11 @@ export default function ScreenRectangle() {
         animate="animate"
         exit="exit"
         transition={{
-            delay: 0.25,
+            delay: 0.275,
             duration: 0.75,
             ease: [0.63, 0, 0.17, 1],
         }}
-        className="fixed top-full w-screen h-screen z-10 bg-tertiary"
+        className="fixed top-full w-screen h-screen z-10 bg-secondary"
     />
   </>;
 }
