@@ -20,7 +20,7 @@
   --color-quaternary-hover: #eeaf5d;
 
   /*fonts*/
-  --font-primary: "Geist";
+  --font-primary: "JetBrains Mono";
 }
 
 body {
@@ -101,4 +101,8 @@ body, * {
 
 .cursor.disabled {
   transform: translate(-50%, -50%) scale(0.8);
+}
+
+.cursor.outOfFrame {
+  visibility: hidden;
 }

@@ -26,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geist.variable} antialiased overflow-hidden relative`}>
+      <body className={`${jetBrainsMono.variable} antialiased overflow-hidden relative`}>
         <CustomCursor />
         <ScreenTransition/>
         <PageTransition>
