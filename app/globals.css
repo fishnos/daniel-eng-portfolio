@@ -25,7 +25,10 @@
 
 body {
   @apply font-primary bg-primary text-accent leading-relaxed;
-  cursor: none;
+}
+
+body, * {
+  cursor: none !important;
 }
 
 .h1 {
@@ -85,14 +88,17 @@ body {
   transform: translate(-50%, -50%);
   transition: transform 0.35s ease;
   pointer-events: none;
-  z-index: 1;
-  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.18);
+  z-index: 9999;
+  box-shadow: 
+    0 0 8px rgba(255, 255, 255, 0.2),
+    0 0 16px rgba(255, 255, 255, 0.2),
+    0 0 24px rgba(255, 255, 255, 0.1);
 }
 
 .cursor.hovered {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(0.1);
 }
 
 .cursor.disabled {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0.8);
 }

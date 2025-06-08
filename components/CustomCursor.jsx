@@ -28,12 +28,10 @@ export default function CustomCursor() {
       setIsHovered(false);
     };
 
-    // Add event listeners for cursor movement
     window.addEventListener('mousemove', updateCursorPosition);
     window.addEventListener('mousedown', handleMouseDown);
     window.addEventListener('mouseup', handleMouseUp);
 
-    // Add event listeners for all elements
     document.addEventListener('mouseover', handleMouseOver);
     document.addEventListener('mouseout', handleMouseOut);
 
