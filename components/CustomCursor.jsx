@@ -7,11 +7,8 @@ export default function CustomCursor() {
   const [isHovered, setIsHovered] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [isOutOfFrame, setIsOutOfFrame] = useState(false);
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
-
     const updateCursorPosition = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
       setIsOutOfFrame(false);
