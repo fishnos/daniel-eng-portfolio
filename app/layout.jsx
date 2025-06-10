@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
               flexItem 
               sx={{ 
                 height: '100vh',
-                borderColor: 'var(--color-accent)',
+                borderColor: 'var(--color-secondary)',
                 opacity: 1,
                 borderWidth: '0.5px'
               }} 

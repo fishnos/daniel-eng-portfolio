@@ -30,7 +30,7 @@ export default function ScreenRectangle() {
             duration: 0.5,
             ease: [0.63, 0, 0.17, 1],
         }}
-        className="fixed top-full w-screen h-screen z-30 bg-accent"
+        className="fixed top-full w-screen h-screen z-30 bg-gray-500"
     />
     <motion.div 
         variants={rectangleVariants}
@@ -42,7 +42,7 @@ export default function ScreenRectangle() {
             duration: 0.7,
             ease: [0.63, 0, 0.17, 1],
         }}
-        className="fixed top-full w-screen h-screen z-20 bg-accent-hover"
+        className="fixed top-full w-screen h-screen z-20 bg-accent"
     />
      <motion.div 
         variants={rectangleVariants}
@@ -54,7 +54,7 @@ export default function ScreenRectangle() {
             duration: 0.75,
             ease: [0.63, 0, 0.17, 1],
         }}
-        className="fixed top-full w-screen h-screen z-10 bg-secondary"
+        className="fixed top-full w-screen h-screen z-10 bg-tertiary"
     />
   </>;
 }

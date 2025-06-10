@@ -10,11 +10,11 @@
   --breakpoint-2xl: 1520;
 
   /*colors*/
-  --color-primary: #d1bba5;
+  --color-primary: #2b2822;
   --color-secondary: #e8e4e0;
-  --color-accent: #2b2822;
-  --color-accent-hover: #4d4c4a;
-  --color-tertiary: #adcad0;
+  --color-accent: #cbeff0;
+  --color-accent-hover: #d8ebeb;
+  --color-tertiary: #8fe0f1;
   --color-tertiary-hover: #c5e5ec;
   --color-quaternary: #fa9819;
   --color-quaternary-hover: #eeaf5d;
@@ -24,7 +24,7 @@
 }
 
 body {
-  @apply font-primary bg-primary text-accent leading-relaxed;
+  @apply font-primary bg-primary text-secondary leading-relaxed;
 }
 
 body, * {

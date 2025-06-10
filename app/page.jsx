@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import HomePageHeader from '../components/HomePageHeader'
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -15,12 +16,10 @@ export default function Home() {
           ease: "easeIn"
         }
       }}
-      className="h-screen flex items-center"
+      className="h-screen"
     >
       <div className="flex flex-col w-full justify-between items-center xl:flex-row">
-        <div className="w-full xl:w-[550px]">
-          homepage
-        </div>
+        <HomePageHeader />
         <div className="flex-1 hidden xl:flex relative z-20">
         </div>
       </div>
