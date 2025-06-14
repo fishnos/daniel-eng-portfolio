@@ -17,7 +17,7 @@ export default function About() {
                 }
             }}
         >
-            about
+            about me
         </motion.section>
     </div>
   )

@@ -106,3 +106,28 @@ body, * {
 .cursor.outOfFrame {
   visibility: hidden;
 }
+
+.text-glow:hover {
+  text-shadow:
+    0 0 6px rgba(185, 255, 255, 0.25),
+    0 0 12px rgba(185, 255, 255, 0.2),
+    0 0 24px rgba(185, 255, 255, 0.15),
+    0 0 48px rgba(185, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, 
+    #d8ebeb, #c3f0f0, #b0f4f4, #a1efef, #8cecec, #a1efef, #b0f4f4, #c3f0f0
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}

@@ -17,7 +17,7 @@ export default function Projects() {
             }
           }}
         >
-          homepage
+          my projects
         </motion.section>
     </div>
   )

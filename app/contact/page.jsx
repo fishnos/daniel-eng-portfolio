@@ -17,7 +17,7 @@ export default function Contact() {
                 }
             }}
         >
-            homepage
+            contact me
         </motion.section>
     </div>
   )
