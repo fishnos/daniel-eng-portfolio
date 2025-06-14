@@ -10,7 +10,7 @@
   --breakpoint-2xl: 1520;
 
   /*colors*/
-  --color-primary: #2b2822;
+  --color-primary: #0c161b;
   --color-secondary: #e8e4e0;
   --color-accent: #cbeff0;
   --color-accent-hover: #d8ebeb;
@@ -107,14 +107,6 @@ body, * {
   visibility: hidden;
 }
 
-.text-glow:hover {
-  text-shadow:
-    0 0 6px rgba(185, 255, 255, 0.25),
-    0 0 12px rgba(185, 255, 255, 0.2),
-    0 0 24px rgba(185, 255, 255, 0.15),
-    0 0 48px rgba(185, 255, 255, 0.1);
-}
-
 .text-gradient {
   background: linear-gradient(to right, 
     #d8ebeb, #c3f0f0, #b0f4f4, #a1efef, #8cecec, #a1efef, #b0f4f4, #c3f0f0
@@ -124,6 +116,15 @@ body, * {
   -webkit-background-clip: text;
   color: transparent;
   animation: animate-gradient 2.5s linear infinite;
+  transition: text-shadow 0.4s ease, color 0.4s ease;
+}
+
+.text-glow:hover {
+  text-shadow:
+    0 0 6px rgba(185, 255, 255, 0.25),
+    0 0 12px rgba(185, 255, 255, 0.2),
+    0 0 24px rgba(185, 255, 255, 0.15),
+    0 0 48px rgba(185, 255, 255, 0.1);
 }
 
 @keyframes animate-gradient {

@@ -50,7 +50,7 @@ export default function HomePage() {
               repeat={Infinity}
               cursor={false}
             />
-            <p className="text-gray-300 mb-6 mt-6">
+            <p className="text-gray-300 mb-4 mt-2">
               I specialize in creating technology that solves problems with
               optimality and practicality.
             </p>
@@ -72,9 +72,9 @@ export default function HomePage() {
         </div>
         <div className="flex-1 hidden xl:flex relative z-20"></div>
         {/*projects display*/}
-        <section>
+        <motion.div>
           
-        </section>
+        </motion.div>
       </div>
     </motion.section>
   );
