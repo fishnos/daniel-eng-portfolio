@@ -31,10 +31,7 @@ export default function NavLinks({ containerStyles }) {
         <ul className={containerStyles}>
             {links.map((fileLink, index) => {
                 const isActive = pathname === fileLink.path;
-
-                // const charLength = fileLink.path.length;
-                // const lineWidth = charLength > 5 ? "after:w-[105%]" : "after:w-[85%]"
-
+                
                 return (
                     <Link 
                         href={fileLink.path} 
