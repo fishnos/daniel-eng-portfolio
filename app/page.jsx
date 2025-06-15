@@ -33,7 +33,7 @@ export default function HomePage() {
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl p-10 w-full text-center">
             <h1 className="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
               Hello, I'm{" "}
-              <span className="text-gradient text-glow">Daniel Kosukhin</span>
+              <span className="text-gradient text-glow-hover">Daniel Kosukhin</span>
             </h1>
             <TypeAnimation
               sequence={[

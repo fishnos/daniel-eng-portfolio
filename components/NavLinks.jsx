@@ -38,7 +38,7 @@ export default function NavLinks({ containerStyles }) {
                         key={index}
                         className={`relative text-lg uppercase text-primary font-bold`}
                     >
-                        <span className={`relative z-10 ${isActive ? "text-tertiary" : "text-secondary"}`}>{fileLink.page}</span>
+                        <span className={`relative z-10 text-glow-hover ${isActive ? "text-tertiary" : "text-secondary"}`}>{fileLink.page}</span>
                     </Link>
                 );
             })}
