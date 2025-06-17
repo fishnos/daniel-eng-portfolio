@@ -13,7 +13,7 @@ export default function NavBar() {
   }
 
   return <>
-    <header className="flex justify-between items-center px-8 py-4 w-full fixed top-0 z-30 bg-transparent">
+    <header className="flex justify-between items-center px-8 py-4 w-full fixed top-0 z-50 bg-transparent">
       <h1 className="font-extrabold text-[22px]">kosukhin.<span className="text-glow-hover text-gradient">tech</span></h1>
       <nav>
         <NavLinks containerStyles={"hidden md:block flex space-x-8 text-white font-semibold justify-between text-lg"}/>
@@ -43,5 +43,5 @@ export default function NavBar() {
         </nav>
       </>
     )}
-  </>
+  </>;
 }

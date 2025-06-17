@@ -72,9 +72,12 @@ export default function HomePage() {
         </div>
         <div className="flex-1 hidden xl:flex relative z-20"></div>
         {/*projects display*/}
-        <motion.div>
+        <motion.section
+          initial={{}}
+          className=""
+        >
           
-        </motion.div>
+        </motion.section>
       </div>
     </motion.section>
   );
