@@ -92,39 +92,9 @@ export default function HomePage() {
                 </div>
                 <div className="w-full h-[1px] border border-white/15 justify-start justify-center mt-5" />
                 <section className="mt-7 ml-4 bg-transparent">
-                  <div className="flex gap-10 w-full justify-start items-center">
-                    <motion.div 
-                      className="flex items-center justify-center h-[50px] w-[50px] border border-white/15 rounded-xl border-[3px]"
-                      initial={{ scale: 1 }}
-                        whileHover={{
-                          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-                          scale: 1.1,
-                          transition: {
-                            duration: 0.2,
-                            ease: "easeOut"
-                          }
-                      }}
-                    >
-                      <button onClick={handleGithubClickedEvent}>
-                        <FaGithub size={30} color="gray" />
-                      </button>
-                    </motion.div>
-                    <motion.div 
-                      className="flex items-center justify-center h-[50px] w-[50px] border border-white/15 rounded-xl border-[3px]"
-                      initial={{ scale: 1 }}
-                        whileHover={{
-                          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-                          scale: 1.1,
-                          transition: {
-                            duration: 0.2,
-                            ease: "easeOut"
-                          }
-                      }}
-                    >
-                      <button onClick={handleGithubClickedEvent}>
-                        <FaGoogle size={30} color="gray" />
-                      </button>
-                    </motion.div>
+                  <div className="flex gap-10 w-full md:justify-start items-center justify-center">
+                    <SocialButton iconName="Github"/>
+                    <SocialButton iconName="Google"/>
                     <SocialButton iconName="Discord"/>
                   </div>
                 </section>

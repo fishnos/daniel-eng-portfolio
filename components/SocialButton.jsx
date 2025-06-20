@@ -5,35 +5,35 @@ import { motion } from "framer-motion";
 import { FaGithub, FaDiscord, FaGoogle } from "react-icons/fa";
 
 export default function SocialButton({ containerStyles, iconName }) {
-    const iconMap = {
-        Discord: <FaDiscord size={30} color="gray" />,
-        Github: <FaGithub size={30} color="gray" />,
-        Google: <FaGoogle size={30} color="gray" />,
-      };
-    
-      const handlerMap = {
-        Discord: () => {
-          window.open(
-            "https://discord.com/users/764148620660047912",
-            "_blank",
-            "noopener,noreferrer"
-          );
-        },
-        Github: () => {
-          window.open(
-            "https://github.com/fishnos?tab=overview&from=2025-06-01&to=2025-06-15",
-            "_blank",
-            "noopener,noreferrer"
-          );
-        },
-        Google: () => {
-          window.open(
-            "https://mail.google.com/mail/?view=cm&fs=1&to=dkny11692@gmail.com&su=Subject&body=BodyText",
-            "_blank",
-            "noopener,noreferrer"
-          );
-        },
-      };
+  const iconMap = {
+    Discord: <FaDiscord size={30} color="gray" />,
+    Github: <FaGithub size={30} color="gray" />,
+    Google: <FaGoogle size={30} color="gray" />,
+  };
+
+  const handlerMap = {
+    Discord: () => {
+      window.open(
+        "https://discord.com/users/764148620660047912",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    },
+    Github: () => {
+      window.open(
+        "https://github.com/fishnos?tab=overview&from=2025-06-01&to=2025-06-15",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    },
+    Google: () => {
+      window.open(
+        "https://mail.google.com/mail/?view=cm&fs=1&to=dkny11692@gmail.com&su=Subject&body=BodyText",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    },
+  };
 
   return (
     <motion.div
@@ -48,9 +48,7 @@ export default function SocialButton({ containerStyles, iconName }) {
         },
       }}
     >
-      <button onClick={handlerMap[iconName]}>
-        {iconMap[iconName]}
-      </button>
+      <button onClick={handlerMap[iconName]}>{iconMap[iconName]}</button>
     </motion.div>
   );
 }
