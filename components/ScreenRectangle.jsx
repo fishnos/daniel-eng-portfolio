@@ -28,7 +28,7 @@ export default function ScreenRectangle() {
         exit="exit"
         transition={{
           delay: 0,
-          duration: 0.5,
+          duration: 0.45,
           ease: [0.63, 0, 0.17, 1],
         }}
         className="fixed top-full w-screen h-screen z-30 bg-gray-500"
@@ -40,7 +40,7 @@ export default function ScreenRectangle() {
         exit="exit"
         transition={{
           delay: 0.15,
-          duration: 0.7,
+          duration: 0.55,
           ease: [0.63, 0, 0.17, 1],
         }}
         className="fixed top-full w-screen h-screen z-20 bg-accent"
@@ -52,7 +52,7 @@ export default function ScreenRectangle() {
         exit="exit"
         transition={{
           delay: 0.275,
-          duration: 0.75,
+          duration: 0.6,
           ease: [0.63, 0, 0.17, 1],
         }}
         className="fixed top-full w-screen h-screen z-10 bg-tertiary"

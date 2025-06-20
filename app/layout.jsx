@@ -31,7 +31,6 @@ export default function RootLayout({ children }) {
       >
         <Gradient />
         <CustomCursor />
-        <ScreenTransition />
         <PageTransition>
           <div className="flex">
             {/*main navbar*/}

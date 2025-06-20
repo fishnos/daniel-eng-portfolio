@@ -1,7 +1,10 @@
 import React from "react";
 
-export default function Gradient() {
+export default function Gradient({ containerStyles }) {
   return (
-    <div className="absolute pointer-events-none inset-0 -z-10 h-full w-full bg-primary bg-[linear-gradient(to_right,#1a2a2f_1px,transparent_1px),linear-gradient(to_bottom,#1a2a2f_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
+    <div
+      className={`${containerStyles} fixed inset-0 -z-10 pointer-events-none bg-primary bg-[linear-gradient(to_right,#1a2a2f_1px,transparent_1px),linear-gradient(to_bottom,#1a2a2f_1px,transparent_1px)] bg-[size:3rem_3rem]`}
+    >
+    </div>
   );
 }

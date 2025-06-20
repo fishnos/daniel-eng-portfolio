@@ -11,7 +11,7 @@ export default function Projects() {
         animate={{
           opacity: 1,
           transition: {
-            delay: 1.7,
+            delay: 0.1,
             duration: 0.4,
             ease: "easeIn",
           },
