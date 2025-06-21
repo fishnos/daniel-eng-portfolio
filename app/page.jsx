@@ -3,12 +3,14 @@
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import SocialButton from "../components/SocialButton"
-import { FaLinkedin } from "react-icons/fa";
+import ContactButton from "../components/ContactButton"
+import { FaLinkedin, FaPhone } from "react-icons/fa";
 import { MdOutlineQrCode2 } from "react-icons/md";
 import { TbDrone } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomePage() {
+  const [isHoveredPhone, setIsHoveredPhone] = useState(false);
   const [isHoveredDrone, setIsHoveredDrone] = useState(false);
   const [isHoveredQR, setIsHoveredQR] = useState(false);
 
@@ -177,7 +179,7 @@ export default function HomePage() {
                     PACS
                   </motion.span>}
                 </motion.a>
-                {/*robot*/}
+                {/*wpilib*/}
                 <motion.a
                   href="/projects"
                   onHoverStart={() => setIsHoveredQR(true)}
@@ -192,7 +194,7 @@ export default function HomePage() {
                 >
                   {isHoveredQR &&
                   <motion.span
-                    initial={{ opacity: 0, x: -10 }}
+                    initial={{opacity: 0, x: -10}}
                     animate={{
                       opacity: isHoveredQR ? 1 : 0,
                       x: isHoveredQR ? 0 : -10,
@@ -204,7 +206,7 @@ export default function HomePage() {
                     }}
                     className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
                   >
-                    WPILib
+                    WPILib Automation
                   </motion.span>}
                   <motion.div
                     href="/projects"
@@ -215,6 +217,9 @@ export default function HomePage() {
                 </motion.a>
               </motion.div>
             </motion.h2>
+          </section>
+          {/*contact*/}
+          <section className="mt-5 flex flex-col justify-start w-full z-30" key="contacts">
             <motion.h2
               key="contacts"
               initial={{opacity: 0, y: 75}}
@@ -229,9 +234,60 @@ export default function HomePage() {
               }}
               exit={{opacity: 0}}
               viewport={{ once: true }}
-              className="font-extrabold text-[50px] mt-10 mb-50"
+              className="font-extrabold text-[50px] mt-10"
             >
-              Contacts
+              Contact Me
+              {/*buttons*/}
+              <motion.div
+                className="bg-white/10 relative flex flex-row justify-end items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
+                initial={{opacity: 0, y: 75}}
+                whileInView={{
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    delay: 0.2,
+                    duration: 0.55,
+                    ease: "circInOut",
+                  },
+                }}
+                exit={{opacity: 0}}
+                viewport={{once: true}}
+              >
+                <div className="relative flex flex-row justify-end items-center w-full mr-8 gap-10 z-30">
+                  <AnimatePresence>
+                    {isHoveredPhone && (
+                      <motion.span
+                        key="hover-text"
+                        initial={{ opacity: 0, x: 10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 10 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="left-8 absolute justify-start right-14 text-glow text-gradient font-extrabold text-[25px] z-40"
+                      >
+                        Go to contacts →
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
+                  <motion.div
+                    className="flex items-center justify-center h-[50px] w-[50px] border border-white/15 rounded-xl border-[3px]"
+                    onHoverStart={() => setIsHoveredPhone(true)}
+                    onHoverEnd={() => setIsHoveredPhone(false)}
+                    initial={{ scale: 1 }}
+                    whileHover={{
+                      boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+                      scale: 1.1,
+                      transition: {
+                        duration: 0.2,
+                        ease: "easeOut",
+                      },
+                    }}
+                  >
+                    <a href="/contact">
+                      <FaPhone color="gray" size={30}/>
+                    </a>
+                  </motion.div>
+                </div>
+              </motion.div>
             </motion.h2>
           </section>
         </AnimatePresence>

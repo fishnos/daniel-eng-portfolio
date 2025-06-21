@@ -51,7 +51,7 @@ export default function NavBar() {
               ease: "easeOut",
             }}
             exit={{opacity: 0}}
-            className="md:hidden fixed top-[100px] flex flex-col absolute w-full items-center justify-center py-6 z-200 h-[60vh]"
+            className="md:hidden fixed top-[100px] flex flex-col absolute w-full items-center justify-center py-6 z-100 h-[60vh]"
           >
             <NavLinks containerStyles="flex flex-col space-y-6"/>
           </motion.nav>

@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <Gradient />
         <CustomCursor />
         <PageTransition>
-          <div className="flex">
+          <div className="flex z-100">
             {/*main navbar*/}
             <NavBar />
             <div className="w-full max-w-[1130px] px-[15px] mx-auto">
