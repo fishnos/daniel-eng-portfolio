@@ -9,7 +9,8 @@ import { TbDrone } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomePage() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredDrone, setIsHoveredDrone] = useState(false);
+  const [isHoveredQR, setIsHoveredQR] = useState(false);
 
   const handleLinkedInClickEvent = (e) => {
     e.preventDefault();
@@ -127,7 +128,7 @@ export default function HomePage() {
             >
               Projects
               <motion.div
-                className="bg-white/10 relative flex flex-col justify-center items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-40 gap-5"
+                className="bg-white/10 relative flex flex-col justify-center items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
                 initial={{opacity: 0, y: 75}}
                 whileInView={{
                   opacity: 1, 
@@ -142,43 +143,45 @@ export default function HomePage() {
                 viewport={{once: true}}
               >
                 {/*PACS*/}
-                <motion.div
-                  onHoverStart={() => setIsHovered(true)}
-                  onHoverEnd={() => setIsHovered(false)}
-                  initial={{width: "60px"}}
+                <motion.a
+                  href="/projects"
+                  onHoverStart={() => setIsHoveredDrone(true)}
+                  onHoverEnd={() => setIsHoveredDrone(false)}
+                  initial={{ width: "60px" }}
                   whileHover={{
                     width: "100%",
                     boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-                    transition: { 
-                      duration: 0.3, ease: "easeInOut" 
-                    },
+                    transition: { duration: 0.3, ease: "easeInOut" }
                   }}
-                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center bg-white/15 overflow-hidden"
+                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center bg-white/15 overflow-hidden cursor-pointer no-underline"
                 >
-                  <motion.button
-                    initial={{scaleX: 1}}
-                    className="flex justify-center items-center w-[60px] h-[60px]"
+                  <motion.div
+                    className="flex items-center justify-center w-[60px] h-[60px]"
                   >
-                    <TbDrone color="gray" size="40px"/>
-                    {/* <motion.span
-                      initial={{opacity: 0, x: -10}}
-                      animate={{
-                        opacity: isHovered ? 1 : 0,
-                        x: 0,
-                        transition: {
-                          duration: 0.3,
-                          delay: 0.2,
-                          ease: "easeInOut"
-                        }
-                      }}
-                      className="flex text-glow text-gradient font-extrabold text-[20px] justify-end "
-                    >
-                      PACS
-                    </motion.span> */}
-                  </motion.button>
-                </motion.div>
+                    <TbDrone color="gray" size="40px" />
+                  </motion.div>
+                  {isHoveredDrone &&
+                  <motion.span
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{
+                      opacity: isHoveredDrone ? 1 : 0,
+                      x: isHoveredDrone ? 0 : -10,
+                      transition: {
+                        duration: 0.3,
+                        delay: 0.2,
+                        ease: "easeInOut"
+                      }
+                    }}
+                    className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
+                  >
+                    PACS
+                  </motion.span>}
+                </motion.a>
                 {/*robot*/}
-                <motion.div
+                <motion.a
+                  href="/projects"
+                  onHoverStart={() => setIsHoveredQR(true)}
+                  onHoverEnd={() => setIsHoveredQR(false)}
                   initial={{width: "60px"}}
                   whileHover={{
                     width: "100%",
@@ -187,12 +190,29 @@ export default function HomePage() {
                   }}
                   className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center justify-end bg-white/15 overflow-hidden"
                 >
-                  <motion.button
+                  {isHoveredQR &&
+                  <motion.span
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{
+                      opacity: isHoveredQR ? 1 : 0,
+                      x: isHoveredQR ? 0 : -10,
+                      transition: {
+                        duration: 0.3,
+                        delay: 0.2,
+                        ease: "easeInOut"
+                      }
+                    }}
+                    className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
+                  >
+                    WPILib
+                  </motion.span>}
+                  <motion.div
+                    href="/projects"
                     className="flex items-center justify-center w-[60px] h-[60px]"
                   >
-                    <MdOutlineQrCode2 color="gray" size="40px" />
-                  </motion.button>
-                </motion.div>
+                    <MdOutlineQrCode2 color="gray" size="40px" className="w-[60px]"/>
+                  </motion.div>
+                </motion.a>
               </motion.div>
             </motion.h2>
             <motion.h2
