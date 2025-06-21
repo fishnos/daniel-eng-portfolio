@@ -2,7 +2,7 @@ import { JetBrains_Mono, Geist } from "next/font/google";
 import NavBar from "../components/NavBar";
 import Gradient from "../components/Gradient";
 import PageTransition from "../components/PageTransitions";
-import ScreenTransition from "../components/ScreenTransition";
+import Footer from "../components/Footer";
 import CustomCursor from "../components/CustomCursor";
 import "./globals.css";
 
@@ -32,12 +32,13 @@ export default function RootLayout({ children }) {
         <Gradient />
         <CustomCursor />
         <PageTransition>
-          <div className="flex z-100">
+          <div className="flex flex-col min-h-screen z-100">
             {/*main navbar*/}
             <NavBar />
-            <div className="w-full max-w-[1130px] px-[15px] mx-auto">
+            <main className="w-full max-w-[1130px] px-[15px] mx-auto flex-grow">
               <div>{children}</div>
-            </div>
+            </main>
+            <Footer />
           </div>
         </PageTransition>
       </body>

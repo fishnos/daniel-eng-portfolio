@@ -2,8 +2,7 @@
 
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import SocialButton from "../components/SocialButton"
-import ContactButton from "../components/ContactButton"
+import SocialButton from "../components/SocialButton";
 import { FaLinkedin, FaPhone } from "react-icons/fa";
 import { MdOutlineQrCode2 } from "react-icons/md";
 import { TbDrone } from "react-icons/tb";
@@ -34,16 +33,14 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="h-screen">
+      <div className="min-h-screen">
         {/*name card*/}
-        <AnimatePresence 
-          mode="sync"
-        >
+        <AnimatePresence mode="sync">
           <motion.div
-            key="name-card" 
-            initial={{opacity: 0, y: 75}}
+            key="name-card"
+            initial={{ opacity: 0, y: 75 }}
             whileInView={{
-              opacity: 1, 
+              opacity: 1,
               y: 0,
               transition: {
                 delay: 0.1,
@@ -51,7 +48,7 @@ export default function HomePage() {
                 ease: "circInOut",
               },
             }}
-            exit={{opacity: 0}}
+            exit={{ opacity: 0 }}
             viewport={{ once: true }}
             className="flex flex-col w-full items-center xl:flex-row"
           >
@@ -59,7 +56,9 @@ export default function HomePage() {
               <div className="bg-white/10 backdrop-blur-xs border border-white/20 shadow-xl rounded-2xl p-10 w-full text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
                   Hello, I'm{" "}
-                  <span className="text-gradient text-glow-hover">Daniel Kosukhin</span>
+                  <span className="text-gradient text-glow-hover">
+                    Daniel Kosukhin
+                  </span>
                 </h1>
                 <div className="h-[30px] overflow-hidden">
                   <TypeAnimation
@@ -95,15 +94,15 @@ export default function HomePage() {
                     className="px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-md font-medium transition flex items-center gap-2"
                   >
                     Get In Touch
-                    <FaLinkedin size={20} color="white" className="ml-1"/>
+                    <FaLinkedin size={20} color="white" className="ml-1" />
                   </a>
                 </div>
                 <div className="w-full h-[1px] border border-white/15 justify-start justify-center mt-5" />
                 <section className="mt-7 ml-4 bg-transparent">
                   <div className="flex gap-10 w-full md:justify-start items-center justify-center">
-                    <SocialButton iconName="Github"/>
-                    <SocialButton iconName="Google"/>
-                    <SocialButton iconName="Discord"/>
+                    <SocialButton iconName="Github" />
+                    <SocialButton iconName="Google" />
+                    <SocialButton iconName="Discord" />
                   </div>
                 </section>
               </div>
@@ -114,9 +113,9 @@ export default function HomePage() {
           <section className="mt-5 flex flex-col justify-start w-full z-30">
             <motion.h2
               key="projects"
-              initial={{opacity: 0, y: 75}}
+              initial={{ opacity: 0, y: 75 }}
               whileInView={{
-                opacity: 1, 
+                opacity: 1,
                 y: 0,
                 transition: {
                   delay: 0.2,
@@ -124,16 +123,16 @@ export default function HomePage() {
                   ease: "circInOut",
                 },
               }}
-              exit={{opacity: 0}}
+              exit={{ opacity: 0 }}
               viewport={{ once: true }}
-              className="font-extrabold text-[50px] mt-10"
+              className="font-extrabold text-[50px] mt-10 text-glow"
             >
               Projects
               <motion.div
                 className="bg-white/10 relative flex flex-col justify-center items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
-                initial={{opacity: 0, y: 75}}
+                initial={{ opacity: 0, y: 75 }}
                 whileInView={{
-                  opacity: 1, 
+                  opacity: 1,
                   y: 0,
                   transition: {
                     delay: 0.2,
@@ -141,8 +140,8 @@ export default function HomePage() {
                     ease: "circInOut",
                   },
                 }}
-                exit={{opacity: 0}}
-                viewport={{once: true}}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
               >
                 {/*PACS*/}
                 <motion.a
@@ -153,38 +152,37 @@ export default function HomePage() {
                   whileHover={{
                     width: "100%",
                     boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-                    transition: { duration: 0.3, ease: "easeInOut" }
+                    transition: { duration: 0.3, ease: "easeInOut" },
                   }}
                   className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center bg-white/15 overflow-hidden cursor-pointer no-underline"
                 >
-                  <motion.div
-                    className="flex items-center justify-center w-[60px] h-[60px]"
-                  >
+                  <motion.div className="flex items-center justify-center w-[60px] h-[60px]">
                     <TbDrone color="gray" size="40px" />
                   </motion.div>
-                  {isHoveredDrone &&
-                  <motion.span
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{
-                      opacity: isHoveredDrone ? 1 : 0,
-                      x: isHoveredDrone ? 0 : -10,
-                      transition: {
-                        duration: 0.3,
-                        delay: 0.2,
-                        ease: "easeInOut"
-                      }
-                    }}
-                    className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
-                  >
-                    PACS
-                  </motion.span>}
+                  {isHoveredDrone && (
+                    <motion.span
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{
+                        opacity: isHoveredDrone ? 1 : 0,
+                        x: isHoveredDrone ? 0 : -10,
+                        transition: {
+                          duration: 0.3,
+                          delay: 0.2,
+                          ease: "easeInOut",
+                        },
+                      }}
+                      className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
+                    >
+                      PACS
+                    </motion.span>
+                  )}
                 </motion.a>
                 {/*wpilib*/}
                 <motion.a
                   href="/projects"
                   onHoverStart={() => setIsHoveredQR(true)}
                   onHoverEnd={() => setIsHoveredQR(false)}
-                  initial={{width: "60px"}}
+                  initial={{ width: "60px" }}
                   whileHover={{
                     width: "100%",
                     boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -192,39 +190,47 @@ export default function HomePage() {
                   }}
                   className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center justify-end bg-white/15 overflow-hidden"
                 >
-                  {isHoveredQR &&
-                  <motion.span
-                    initial={{opacity: 0, x: -10}}
-                    animate={{
-                      opacity: isHoveredQR ? 1 : 0,
-                      x: isHoveredQR ? 0 : -10,
-                      transition: {
-                        duration: 0.3,
-                        delay: 0.2,
-                        ease: "easeInOut"
-                      }
-                    }}
-                    className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
-                  >
-                    WPILib Automation
-                  </motion.span>}
+                  {isHoveredQR && (
+                    <motion.span
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{
+                        opacity: isHoveredQR ? 1 : 0,
+                        x: isHoveredQR ? 0 : -10,
+                        transition: {
+                          duration: 0.3,
+                          delay: 0.2,
+                          ease: "easeInOut",
+                        },
+                      }}
+                      className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
+                    >
+                      WPILib Automation
+                    </motion.span>
+                  )}
                   <motion.div
                     href="/projects"
                     className="flex items-center justify-center w-[60px] h-[60px]"
                   >
-                    <MdOutlineQrCode2 color="gray" size="40px" className="w-[60px]"/>
+                    <MdOutlineQrCode2
+                      color="gray"
+                      size="40px"
+                      className="w-[60px]"
+                    />
                   </motion.div>
                 </motion.a>
               </motion.div>
             </motion.h2>
           </section>
           {/*contact*/}
-          <section className="mt-5 flex flex-col justify-start w-full z-30" key="contacts">
+          <section
+            className="mt-5 flex flex-col justify-start w-full z-30"
+            key="contacts"
+          >
             <motion.h2
               key="contacts"
-              initial={{opacity: 0, y: 75}}
+              initial={{ opacity: 0, y: 75 }}
               whileInView={{
-                opacity: 1, 
+                opacity: 1,
                 y: 0,
                 transition: {
                   delay: 0.2,
@@ -232,17 +238,17 @@ export default function HomePage() {
                   ease: "circInOut",
                 },
               }}
-              exit={{opacity: 0}}
+              exit={{ opacity: 0 }}
               viewport={{ once: true }}
-              className="font-extrabold text-[50px] mt-10"
+              className="font-extrabold text-[50px] mt-10 text-glow"
             >
               Contact Me
               {/*buttons*/}
               <motion.div
                 className="bg-white/10 relative flex flex-row justify-end items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
-                initial={{opacity: 0, y: 75}}
+                initial={{ opacity: 0, y: 75 }}
                 whileInView={{
-                  opacity: 1, 
+                  opacity: 1,
                   y: 0,
                   transition: {
                     delay: 0.2,
@@ -250,8 +256,8 @@ export default function HomePage() {
                     ease: "circInOut",
                   },
                 }}
-                exit={{opacity: 0}}
-                viewport={{once: true}}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
               >
                 <div className="relative flex flex-row justify-end items-center w-full mr-8 gap-10 z-30">
                   <AnimatePresence>
@@ -283,7 +289,7 @@ export default function HomePage() {
                     }}
                   >
                     <a href="/contact">
-                      <FaPhone color="gray" size={30}/>
+                      <FaPhone color="gray" size={30} />
                     </a>
                   </motion.div>
                 </div>
