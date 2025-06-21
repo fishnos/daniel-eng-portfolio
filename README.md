@@ -10,12 +10,11 @@ A brief overview of my accomplishments for the past year.
 ## Authors
 
 - [@fishnos](https://www.github.com/fishnos)
-- [@cresqnt-sys](https://www.github.com/cresqnt-sys)
 
 
 ## Previews
 
-![Preview:](https://github.com/fishnos/image-storage/blob/main/images/eng-portfolio/app-ss.png?raw=true)
+![Preview:](https://github.com/fishnos/image-storage/blob/main/images/eng-portfolio/new-app-ss.png?raw=true)
 
 ## Getting Started
 
