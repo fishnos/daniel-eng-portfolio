@@ -27,8 +27,12 @@ body {
   @apply font-primary bg-primary text-secondary leading-relaxed;
 }
 
-body, * {
+* {
   cursor: none !important;
+  -webkit-user-select: none; /* safari */
+  -moz-user-select: none; /* firefox */
+  -ms-user-select: none; /* internet explorer/edge */
+  user-select: none; /* standard syntax */
 }
 
 .h1 {

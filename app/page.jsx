@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import SocialButton from "../components/SocialButton"
-import { FaLinkedin, FaGithub, FaGoogle, FaDiscord } from "react-icons/fa";
-import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineQrCode2 } from "react-icons/md";
+import { TbDrone } from "react-icons/tb";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomePage() {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleLinkedInClickEvent = (e) => {
     e.preventDefault();
     window.open(
@@ -76,6 +80,7 @@ export default function HomePage() {
                   optimality and practicality.
                 </p>
                 <div className="flex justify-center gap-4">
+                  {/*TODO: stylize these buttons and fix the small screen overlap bug*/}
                   <a
                     href="/projects"
                     className="px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-md font-medium transition"
@@ -103,8 +108,8 @@ export default function HomePage() {
             <div className="flex-1 hidden xl:flex relative z-20"></div>
           </motion.div>
           {/*projects display*/}
-          <section className="mt-5 flex justify-start w-full z-30">
-            <motion.h1
+          <section className="mt-5 flex flex-col justify-start w-full z-30">
+            <motion.h2
               key="projects"
               initial={{opacity: 0, y: 75}}
               whileInView={{
@@ -118,10 +123,96 @@ export default function HomePage() {
               }}
               exit={{opacity: 0}}
               viewport={{ once: true }}
-              className="font-extrabold text-[45px]"
+              className="font-extrabold text-[50px] mt-10"
             >
               Projects
-            </motion.h1>
+              <motion.div
+                className="bg-white/10 relative flex flex-col justify-center items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-40 gap-5"
+                initial={{opacity: 0, y: 75}}
+                whileInView={{
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    delay: 0.2,
+                    duration: 0.55,
+                    ease: "circInOut",
+                  },
+                }}
+                exit={{opacity: 0}}
+                viewport={{once: true}}
+              >
+                {/*PACS*/}
+                <motion.div
+                  onHoverStart={() => setIsHovered(true)}
+                  onHoverEnd={() => setIsHovered(false)}
+                  initial={{width: "60px"}}
+                  whileHover={{
+                    width: "100%",
+                    boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+                    transition: { 
+                      duration: 0.3, ease: "easeInOut" 
+                    },
+                  }}
+                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center bg-white/15 overflow-hidden"
+                >
+                  <motion.button
+                    initial={{scaleX: 1}}
+                    className="flex justify-center items-center w-[60px] h-[60px]"
+                  >
+                    <TbDrone color="gray" size="40px"/>
+                    {/* <motion.span
+                      initial={{opacity: 0, x: -10}}
+                      animate={{
+                        opacity: isHovered ? 1 : 0,
+                        x: 0,
+                        transition: {
+                          duration: 0.3,
+                          delay: 0.2,
+                          ease: "easeInOut"
+                        }
+                      }}
+                      className="flex text-glow text-gradient font-extrabold text-[20px] justify-end "
+                    >
+                      PACS
+                    </motion.span> */}
+                  </motion.button>
+                </motion.div>
+                {/*robot*/}
+                <motion.div
+                  initial={{width: "60px"}}
+                  whileHover={{
+                    width: "100%",
+                    boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+                    transition: { duration: 0.2, ease: "easeInOut" },
+                  }}
+                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center justify-end bg-white/15 overflow-hidden"
+                >
+                  <motion.button
+                    className="flex items-center justify-center w-[60px] h-[60px]"
+                  >
+                    <MdOutlineQrCode2 color="gray" size="40px" />
+                  </motion.button>
+                </motion.div>
+              </motion.div>
+            </motion.h2>
+            <motion.h2
+              key="contacts"
+              initial={{opacity: 0, y: 75}}
+              whileInView={{
+                opacity: 1, 
+                y: 0,
+                transition: {
+                  delay: 0.2,
+                  duration: 0.55,
+                  ease: "circInOut",
+                },
+              }}
+              exit={{opacity: 0}}
+              viewport={{ once: true }}
+              className="font-extrabold text-[50px] mt-10 mb-50"
+            >
+              Contacts
+            </motion.h2>
           </section>
         </AnimatePresence>
       </div>

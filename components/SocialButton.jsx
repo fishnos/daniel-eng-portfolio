@@ -28,7 +28,7 @@ export default function SocialButton({ containerStyles, iconName }) {
     },
     Google: () => {
       window.open(
-        "https://mail.google.com/mail/?view=cm&fs=1&to=dkny11692@gmail.com&su=Subject&body=BodyText",
+        "https://mail.google.com/mail/?view=cm&fs=1&to=dkosukhintech@gmail.com&su=Subject&body=BodyText",
         "_blank",
         "noopener,noreferrer"
       );
