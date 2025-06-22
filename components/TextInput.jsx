@@ -3,26 +3,26 @@ import { motion } from "framer-motion";
 
 export default function TextInput({
   id,
-  defaultValue="",
+  defaultValue = "",
   label,
   placeholder,
-  containerStyles="",
+  containerStyles = "",
   value,
-  onChange
+  onChange,
 }) {
   return (
     <>
-      <motion.div 
+      <motion.div
         className="flex flex-col w-full justify-center items-center mt-5"
         initial={{ opacity: 0, y: 75 }}
         whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              delay: 0.05,
-              duration: 0.4,
-              ease: "circInOut",
-            },
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.05,
+            duration: 0.4,
+            ease: "circInOut",
+          },
         }}
         viewport={{ once: true }}
       >
