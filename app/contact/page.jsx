@@ -35,9 +35,9 @@ export default function Contact() {
 
   return (
     <AnimatePresence>
-      <div className="w-full max-w-[550px] py-5 bg-white/20 border border-white/15 rounded-2xl backdrop-blur-xs mx-auto min-h-screen flex flex-col gap-10 pt-12 mt-35">
+      <div className="w-full max-w-[550px] py-5 rounded-2xl mx-auto min-h-screen flex flex-col gap-10 pt-12 mt-30">
         <motion.h1
-          className="text-center text-3xl font-extrabold text-glow-hover text-gradient"
+          className="text-center text-[50px] font-extrabold text-glow-hover text-gradient"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
           viewport={{ once: true }}
@@ -50,6 +50,7 @@ export default function Contact() {
           className="flex flex-col w-full gap-5 items-center"
           initial={{ opacity: 0 }}
           whileInView={{
+            delay: 0.1,
             opacity: 1,
             transition: { delay: 0.1, duration: 0.5 },
           }}
@@ -97,7 +98,7 @@ export default function Contact() {
                 border border-white/25 rounded-2xl
                 bg-primary backdrop-blur-xs
                 py-2 px-2 resize-none
-                focus:outline-none focus:ring-0
+                focus:outline-none focus:ring-0 focus:border-[2px]
                 font-semibold placeholder-gray-500
               "
               placeholder="Write your message..."
