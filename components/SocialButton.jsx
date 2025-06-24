@@ -3,12 +3,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaDiscord, FaGoogle } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function SocialButton({ containerStyles, iconName }) {
   const iconMap = {
     Discord: <FaDiscord size={30} color="gray" />,
     Github: <FaGithub size={30} color="gray" />,
-    Google: <FaGoogle size={30} color="gray" />,
+    Google: <MdEmail size={30} color="gray" />,
   };
 
   const handlerMap = {
