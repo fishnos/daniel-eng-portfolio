@@ -74,7 +74,7 @@ export default function HomePage() {
                     wrapper="span"
                     speed={40}
                     repeat={Infinity}
-                    cursor={false}
+                    cursor={true}
                   />
                 </div>
                 <p className="text-gray-300 mb-4 mt-2">
