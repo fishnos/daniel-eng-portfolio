@@ -148,7 +148,7 @@ body {
 }
 
 .ticker {
-  animation: scroll 3s linear infinite;
+  animation: scroll 8s linear infinite;
 }
 
 @keyframes animate-gradient {

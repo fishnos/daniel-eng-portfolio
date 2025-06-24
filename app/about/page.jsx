@@ -72,11 +72,34 @@ export default function About() {
         <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
           My Languages
         </span>
-        <Ticker tickerType={"languages"}/>
+        <motion.div
+          className="w-full flex flex-col gap-1 justify-center items-center bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs py-2"
+        >
+          {/*frontend*/}
+          <h3 className="mt-2 text-glow font-bold text-[22px]">
+            Front-end Experience
+          </h3>
+          <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
+            Using multitude of languages in my toolkit, I develop captivating and engaging designs
+            focused on user-friendliness.
+          </p>
+          <hr className="relative w-[95%] border border-white/20 opacity-50 mt-5"/>
+          <Ticker tickerType={"frontend"}/>
+          <hr className="relative w-[95%] border border-white/20 opacity-50"/>
+          {/*backend*/}
+          {/* <hr className="relative w-[95%] border border-white/20 opacity-50"/>
+          <h3 className="mt-2 text-glow font-bold text-[22px]">
+            Back-end Experience
+          </h3>
+          <p className="relative w-[80%] flex justify-center items-center">
+            Put this section here when you can actually code in backend...
+          </p>
+          <Ticker tickerType={"backend"}/> */}
+        </motion.div>
         <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
           My Tools
         </span>
-        {/* <Ticker tickerType={"tools"}/> */}
+        <Ticker tickerType={"tools"}/>
       </motion.h2>
     </div>
   );
