@@ -54,7 +54,7 @@ export default function About() {
           }
         }}
         viewport={{once: true}}
-        className="h-auto w-full justify-center items-center flex flex-col xl:flex-row gap-2"
+        className="h-auto w-full justify-center items-center flex flex-col gap-2"
       >
         <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
           My Languages
