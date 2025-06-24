@@ -120,15 +120,23 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   animation: animate-gradient 2.5s linear infinite;
-  transition: text-shadow 0.4s ease, color 0.4s ease;
+}
+
+.text-glow-hover {
+  text-shadow: 
+    0 0 0px rgba(185, 255, 255, 0),
+    0 0 0px rgba(185, 255, 255, 0),
+    0 0 0px rgba(185, 255, 255, 0),
+    0 0 0px rgba(185, 255, 255, 0);
+  transition: text-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 .text-glow-hover:hover {
   text-shadow:
-    0 0 6px rgba(185, 255, 255, 0.25),
-    0 0 12px rgba(185, 255, 255, 0.2),
+    0 0 6px  rgba(185, 255, 255, 0.25),
+    0 0 12px rgba(185, 255, 255, 0.20),
     0 0 24px rgba(185, 255, 255, 0.15),
-    0 0 48px rgba(185, 255, 255, 0.1);
+    0 0 48px rgba(185, 255, 255, 0.10);
 }
 
 .text-glow {
@@ -140,7 +148,7 @@ body {
 }
 
 .ticker {
-  animation: scroll 10s linear infinite;
+  animation: scroll 3s linear infinite;
 }
 
 @keyframes animate-gradient {
@@ -154,6 +162,6 @@ body {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-50% - 20px));
+    transform: translateX(calc(-50% - 10px));
   }
 }

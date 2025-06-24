@@ -22,15 +22,6 @@ export default function HomePage() {
     );
   };
 
-  const handleGithubClickedEvent = (e) => {
-    e.preventDefault();
-    window.open(
-      "https://github.com/fishnos?tab=overview&from=2025-06-01&to=2025-06-15",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  };
-
   return (
     <>
       <div className="min-h-screen">
@@ -84,10 +75,10 @@ export default function HomePage() {
                 <div className="flex justify-center gap-4">
                   {/*TODO: stylize these buttons and fix the small screen overlap bug*/}
                   <a
-                    href="/projects"
+                    href="/about"
                     className="px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-md font-medium transition"
                   >
-                    View My Work →
+                    About me →
                   </a>
                   <a
                     onClick={handleLinkedInClickEvent}

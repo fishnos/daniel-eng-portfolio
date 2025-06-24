@@ -31,15 +31,28 @@ export default function About() {
             height={250}
             className="border border-white/15 border-[4px] rounded-full"
           />
-          <div className="ml-8 xl:ml-0">
+          <motion.div 
+            className="ml-8 xl:ml-0"
+            initial={{opacity: 0, y: 75}}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.25,
+                duration: 0.4,
+                ease: "circInOut",
+              }
+            }}
+            viewport={{once: true}}
+          >
             <h1 className="font-extrabold text-glow-hover text-gradient text-[35px]">
               Hey, I'm Daniel (▰˘◡˘▰)
             </h1>
             <p className="mt-2 font-bold text-[25px] text-white">
               I am a passionate front-end developer 
-              that specializes in mechatronics, located in NYC.
+              that specializes in mechatronics, located in NY.
             </p>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
       <motion.h2
@@ -63,7 +76,7 @@ export default function About() {
         <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
           My Tools
         </span>
-        <Ticker tickerType={"tools"} />
+        {/* <Ticker tickerType={"tools"}/> */}
       </motion.h2>
     </div>
   );
