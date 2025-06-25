@@ -1,6 +1,13 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
-import { SiJavascript, SiTypescript, SiTailwindcss, SiCss3, SiHtml5} from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import Image from "next/image";
+import css3 from "../public/assets/icons/css-3.png";
+import framerMotion from "../public/assets/icons/framer-motion.png";
+import javaScript from "../public/assets/icons/icons8-javascript.png";
+import typeScript from "../public/assets/icons/typescript.png";
+import html5 from "../public/assets/icons/html-1.png";
+import tailwindCSS from "../public/assets/icons/tailwind-css-2.png";
+import java from "../public/assets/icons/java-4.png";
+import python from "../public/assets/icons/icons8-python-96.png";
 import { motion } from "framer-motion";
 
 export default function Ticker({ tickerType }) {
@@ -21,7 +28,7 @@ export default function Ticker({ tickerType }) {
           },
         }}
       >
-        <SiJavascript size={30} />
+        <Image src={javaScript} alt="javaScript" width={30} height={30} />
         <span className="text-gradient font-bold">JavaScript</span>
       </motion.a>,
       //typescript
@@ -38,24 +45,24 @@ export default function Ticker({ tickerType }) {
           },
         }}
       >
-        <SiTypescript size={30} />
+        <Image src={typeScript} alt="typeScript" width={30} height={30} />
         <span className="text-gradient font-bold">TypeScript</span>
       </motion.a>,
-      //tailwind
+      //tailwind css
       <motion.a
         href="https://tailwindcss.com/"
         className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
         initial={{ scale: 1 }}
         whileHover={{
-            boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-            scale: 1.05,
-            transition: {
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
             duration: 0.2,
             ease: "easeInOut",
-            },
+          },
         }}
       >
-        <SiTailwindcss size={30} />
+        <Image src={tailwindCSS} alt="tailwind" width={30} height={30} />
         <span className="text-gradient font-bold">Tailwind CSS</span>
       </motion.a>,
       //css
@@ -64,15 +71,15 @@ export default function Ticker({ tickerType }) {
         className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
         initial={{ scale: 1 }}
         whileHover={{
-            boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-            scale: 1.05,
-            transition: {
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
             duration: 0.2,
             ease: "easeInOut",
-            },
+          },
         }}
       >
-        <SiCss3 size={30} />
+        <Image src={css3} alt="css3" width={30} height={30} />
         <span className="text-gradient font-bold">CSS</span>
       </motion.a>,
       //html
@@ -81,15 +88,15 @@ export default function Ticker({ tickerType }) {
         className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
         initial={{ scale: 1 }}
         whileHover={{
-            boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-            scale: 1.05,
-            transition: {
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
             duration: 0.2,
             ease: "easeInOut",
-            },
+          },
         }}
       >
-        <SiHtml5 size={30} />
+        <Image src={html5} alt="html" width={30} height={30} />
         <span className="text-gradient font-bold">HTML</span>
       </motion.a>,
       //framer-motion
@@ -98,15 +105,15 @@ export default function Ticker({ tickerType }) {
         className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
         initial={{ scale: 1 }}
         whileHover={{
-            boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
-            scale: 1.05,
-            transition: {
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
             duration: 0.2,
             ease: "easeInOut",
-            },
+          },
         }}
       >
-        <SiHtml5 size={30} />
+        <Image src={framerMotion} alt="framerMotion" width={30} height={30} />
         <span className="text-gradient font-bold">Framer Motion</span>
       </motion.a>,
     ],
@@ -125,8 +132,88 @@ export default function Ticker({ tickerType }) {
           },
         }}
       >
-        <FaJava size={30} />
+        <Image src={java} alt="java" width={16} height={16} />
         <span className="text-gradient font-bold">Java</span>
+      </motion.a>,
+      <motion.a
+        href="https://www.javascript.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={python} alt="python" width={30} height={30} />
+        <span className="text-gradient font-bold">Python</span>
+      </motion.a>,
+      <motion.a
+        href="https://www.javascript.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={python} alt="python" width={30} height={30} />
+        <span className="text-gradient font-bold">Python</span>
+      </motion.a>,
+      <motion.a
+        href="https://www.javascript.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={python} alt="python" width={30} height={30} />
+        <span className="text-gradient font-bold">Python</span>
+      </motion.a>,
+      <motion.a
+        href="https://www.javascript.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={python} alt="python" width={30} height={30} />
+        <span className="text-gradient font-bold">Python</span>
+      </motion.a>,
+      <motion.a
+        href="https://www.javascript.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={python} alt="python" width={30} height={30} />
+        <span className="text-gradient font-bold">Python</span>
       </motion.a>,
     ],
     //tools
