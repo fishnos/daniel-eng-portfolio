@@ -36,7 +36,7 @@ export default function NavLinks({ containerStyles }) {
           <Link
             href={fileLink.path}
             key={index}
-            className={`relative text-lg uppercase text-primary font-bold`}
+            className={`relative text-lg uppercase text-gradient font-bold`}
           >
             <span
               className={`relative z-10 text-glow-hover ${

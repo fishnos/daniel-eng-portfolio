@@ -147,10 +147,6 @@ body {
     0 0 48px rgba(185, 255, 255, 0.1);
 }
 
-.ticker {
-  animation: scroll 8s linear infinite;
-}
-
 @keyframes animate-gradient {
   to {
     background-position: 200%;

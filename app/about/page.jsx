@@ -84,7 +84,7 @@ export default function About() {
             focused on user-friendliness.
           </p>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5"/>
-          <Ticker tickerType={"frontend"}/>
+          <Ticker tickerType={"frontend"} tickerDuration={"20"}/>
           <hr className="relative w-[75%] border border-white/20 opacity-50"/>
           {/*backend*/}
           <h3 className="mt-2 text-glow font-bold text-[22px]">
@@ -94,13 +94,13 @@ export default function About() {
             I have recently began to dive into backend to find innovative alternatives, such as my contacts page!
           </p>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5"/>
-          <Ticker tickerType={"backend"}/>
+          <Ticker tickerType={"backend"} tickerDuration={"12"}/>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mb-3"/>
         </motion.div>
         <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
           My Tools
         </span>
-        <Ticker tickerType={"tools"}/>
+        <Ticker tickerType={"tools"} tickerDuration={"12"}/>
       </motion.h2>
     </div>
   );
