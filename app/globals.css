@@ -161,3 +161,12 @@ body {
     transform: translateX(calc(-50% - 10px));
   }
 }
+
+@keyframes scroll-footer {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-50% - 8px));
+  }
+}

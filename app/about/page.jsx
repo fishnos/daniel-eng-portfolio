@@ -109,6 +109,42 @@ export default function About() {
           <hr className="relative w-[75%] border border-white/20 opacity-50 mb-3"/>
         </motion.div>
       </motion.h2>
+      <motion.h2
+        initial={{opacity: 0, y: 75}}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.1,
+            duration: 0.4,
+            ease: "circInOut",
+          }
+        }}
+        viewport={{once: true}}
+        className="h-auto w-full justify-center items-center flex flex-col gap-2"
+      >
+        <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
+          My Expertise
+        </span>
+        <motion.div
+          className="w-full flex flex-col px-4 py-4 gap-1 justify-center items-start bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs py-2"
+        >
+          <h4 className="font-bold text-[25px] text-glow">
+            Programming Lead, 2638
+          </h4>
+          <ul className="w-full flex flex-col gap-1 justify-center items-center list-disc list-outside pl-4">
+            <li>
+              Program in <span className="text-glow-hover text-gradient">Java</span> and <span className="text-glow-hover text-gradient">WPILib</span> to develop various path-planning systems 
+            </li>
+            <li>
+              Spearheaded the integration of <span className="text-glow-hover text-gradient">Choreo</span> and <span className="text-glow-hover text-gradient">Pathplanner</span> to draw out autonomous pathways
+            </li>
+            <li>
+              Orchestrated the <span className="text-glow-hover text-gradient">electrical wiring</span> and <span className="text-glow-hover text-gradient">programming</span> of our off-season robot
+            </li>
+          </ul>
+        </motion.div>
+      </motion.h2>
     </div>
   );
 }
