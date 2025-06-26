@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className="gap-10">
-      <div className="px-20 py-8 flex flex-col w-full h-auto bg-white/10 backdrop-blur-xs justify-start items-center mt-35 border border-white/15 rounded-2xl">
+      <div className="px-10 py-8 flex flex-col w-full h-auto bg-white/10 backdrop-blur-xs justify-center mt-35 border border-white/15 rounded-2xl">
         <motion.div
           initial={{opacity: 0, y: 75}}
           whileInView={{
@@ -22,7 +22,7 @@ export default function About() {
             }
           }}
           viewport={{once: true}}
-          className="h-auto w-full flex flex-col xl:flex-row gap-10"
+          className="h-auto w-full justify-center items-center flex flex-col md:flex-row gap-10"
         >
           <Image
             src={idPhoto}
@@ -32,7 +32,7 @@ export default function About() {
             className="border border-white/15 border-[4px] rounded-full"
           />
           <motion.div 
-            className="ml-8 xl:ml-0"
+            className="w-full ml-4 md:ml-0"
             initial={{opacity: 0, y: 75}}
             whileInView={{
               opacity: 1,
