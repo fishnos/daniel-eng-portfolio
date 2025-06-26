@@ -132,7 +132,7 @@ export default function About() {
           <h4 className="font-bold text-[25px] text-glow">
             Programming Lead, 2638
           </h4>
-          <ul className="w-full flex flex-col gap-1 justify-center items-center list-disc list-outside pl-4">
+          <ul className="w-full flex flex-col gap-1 justify-center items-start list-disc list-outside pl-4">
             <li>
               Program in <span className="text-glow-hover text-gradient">Java</span> and <span className="text-glow-hover text-gradient">WPILib</span> to develop various path-planning systems 
             </li>
