@@ -1,27 +1,27 @@
+//TODO: optimize the images into svgs
 import React from "react";
-import Image from "next/image";
-import css3 from "../public/assets/icons/css-3.png";
-import framerMotion from "../public/assets/icons/framer-motion.png";
-import javaScript from "../public/assets/icons/icons8-javascript.png";
-import typeScript from "../public/assets/icons/typescript.png";
-import react from "../public/assets/icons/react-2.png";
-import html5 from "../public/assets/icons/html-1.png";
-import node from "../public/assets/icons/nodejs-3.png";
-import tailwindCSS from "../public/assets/icons/tailwind-css-2.png";
-import nextJS from "../public/assets/icons/next-js.png";
-import java from "../public/assets/icons/java-4.png";
-import python from "../public/assets/icons/icons8-python-96.png";
-import npm from "../public/assets/icons/npm.png";
-import c from "../public/assets/icons/c.png";
-import cSharp from "../public/assets/icons/c-sharp.png";
-import cPlusPlus from "../public/assets/icons/c++.png";
-import redis from "../public/assets/icons/icons8-redis-96.png";
-import figma from "../public/assets/icons/figma.png";
-import vsCode from "../public/assets/icons/vs-code.png";
-import arduino from "../public/assets/icons/arduino.png";
-import intellij from "../public/assets/icons/icons8-intellij-idea.png";
-import pycharm from "../public/assets/icons/pycharm.png";
-import raspi from "../public/assets/icons/icons8-raspberry-pi-96.png";
+import C from '../public/assets/icons/c.svg';
+import CSharp from '../public/assets/icons/c-sharp.svg';
+import CPlusPlus from '../public/assets/icons/c++.svg';
+import Css3 from '../public/assets/icons/css-3.svg';
+import Figma from '../public/assets/icons/figma.svg';
+import FramerMotionIcon from '../public/assets/icons/framer-motion.svg';
+import Html5 from '../public/assets/icons/html-1.svg';
+import JavascriptIcon from '../public/assets/icons/icons8-javascript.svg';
+import Intellij from '../public/assets/icons/intellij.svg';
+import NextJSIcon from '../public/assets/icons/next-js.svg';
+import JavaIcon from '../public/assets/icons/java.svg';
+import Python from '../public/assets/icons/python.svg';
+import NodeJSIcon from '../public/assets/icons/nodejs-3.svg';
+import NpmIcon from '../public/assets/icons/npm.svg';
+import Redis from '../public/assets/icons/redis.svg';
+import Pycharm from '../public/assets/icons/pycharm.svg';
+import ReactIcon from '../public/assets/icons/react-2.svg';
+import TailwindIcon from '../public/assets/icons/tailwind-css-2.svg';
+import TypescriptIcon from '../public/assets/icons/typescript.svg';
+import Arduino from '../public/assets/icons/arduino.svg';
+import VSCodeIcon from '../public/assets/icons/vs-code.svg';
+import RaspPi from '../public/assets/icons/raspberry-pi.svg';
 import { motion } from "framer-motion";
 
 export default function Ticker({ tickerType, tickerDuration }) {
@@ -42,7 +42,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={javaScript} alt="javaScript" width={30} height={30} />
+        <JavascriptIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">JavaScript</span>
       </motion.a>,
       //typescript
@@ -59,7 +59,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={typeScript} alt="typeScript" width={30} height={30} />
+        <TypescriptIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">TypeScript</span>
       </motion.a>,
       //react
@@ -76,7 +76,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={react} alt="react" width={30} height={30} />
+        <ReactIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">React</span>
       </motion.a>,
       //tailwind css
@@ -93,7 +93,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={tailwindCSS} alt="tailwind" width={30} height={30} />
+        <TailwindIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Tailwind CSS</span>
       </motion.a>,
       //css
@@ -110,7 +110,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={css3} alt="css3" width={30} height={30} />
+        <Css3 className="h-[30px] w-[30px] flex-shrink-0"/>
         <span className="text-gradient font-bold">CSS</span>
       </motion.a>,
       //html
@@ -127,7 +127,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={html5} alt="html" width={30} height={30} />
+        <Html5 className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">HTML</span>
       </motion.a>,
       //framer-motion
@@ -144,7 +144,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={framerMotion} alt="framerMotion" width={30} height={30} />
+        <FramerMotionIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Framer Motion</span>
       </motion.a>,
       //next
@@ -161,7 +161,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={nextJS} alt="next" width={30} height={30} />
+        <NextJSIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Next.js</span>
       </motion.a>,
     ],
@@ -181,7 +181,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={java} alt="java" width={16} height={16} />
+        <JavaIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Java</span>
       </motion.a>,
       //python
@@ -198,7 +198,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={python} alt="python" width={30} height={30} />
+        <Python className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Python</span>
       </motion.a>,
       //node
@@ -215,7 +215,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={node} alt="node" width={30} height={30} />
+        <NodeJSIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Node</span>
       </motion.a>,
       //npm
@@ -232,7 +232,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={npm} alt="npm" width={30} height={30} />
+        <NpmIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">npm</span>
       </motion.a>,
       //c
@@ -249,7 +249,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={c} alt="c" width={30} height={30} />
+        <C className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">C</span>
       </motion.a>,
       //c++
@@ -266,7 +266,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={cPlusPlus} alt="c++" width={30} height={30} />
+        <CPlusPlus className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">C++</span>
       </motion.a>,
       //c#
@@ -283,7 +283,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={cSharp} alt="cSharp" width={30} height={30} />
+        <CSharp className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">C#</span>
       </motion.a>,
       //redis
@@ -300,7 +300,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={redis} alt="redis" width={30} height={30} />
+        <Redis className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Redis</span>
       </motion.a>,
     ],
@@ -320,7 +320,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={intellij} alt="intellij" width={30} height={30} />
+        <Intellij className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Intellij</span>
       </motion.a>,
       //pycharm
@@ -337,7 +337,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={pycharm} alt="pycharm" width={30} height={30} />
+        <Pycharm className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Pycharm</span>
       </motion.a>,
       //arduino
@@ -354,7 +354,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={arduino} alt="arduino" width={30} height={30} />
+        <Arduino className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Arduino</span>
       </motion.a>,
       //rpi
@@ -371,7 +371,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={raspi} alt="rpi" width={30} height={30} />
+        <RaspPi className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Raspberry PI</span>
       </motion.a>,
       //vsCode
@@ -388,7 +388,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={vsCode} alt="vscode" width={30} height={30} />
+        <VSCodeIcon className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">VS Code</span>
       </motion.a>,
       //figma
@@ -405,9 +405,11 @@ export default function Ticker({ tickerType, tickerDuration }) {
           },
         }}
       >
-        <Image src={figma} alt="figma" width={30} height={30} />
+        <Figma className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Figma</span>
       </motion.a>,
+      //wpilib
+      
     ],
   };
   const items = tickerTypes[tickerType] || [];
@@ -428,7 +430,13 @@ export default function Ticker({ tickerType, tickerDuration }) {
       className="w-full h-auto items-center overflow-hidden 
                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_90%,transparent)]"
     >
-      <ul className={`w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite]`} style={{animationDuration: `${tickerDuration}s`}}>
+      <ul
+        className="w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform"
+        style={{
+          animationDuration: `${tickerDuration}s`,
+          animationDirection: tickerType === "backend" ? "reverse" : "normal",
+        }}
+      >
         {[...items, ...items].map((item, index) => (
           <li className="items-center flex gap-2 flex-shrink-0" key={index}>
             {item}
