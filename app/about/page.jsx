@@ -29,6 +29,7 @@ export default function About() {
             alt="daniel-photo"
             width={250}
             height={250}
+            priority
             className="border border-white/15 border-[4px] rounded-full"
           />
           <motion.div 
@@ -76,7 +77,7 @@ export default function About() {
           className="w-full flex flex-col gap-1 justify-center items-center bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs py-2"
         >
           {/*frontend*/}
-          <h3 className="mt-5 text-glow font-bold text-[22px]">
+          <h3 className="mt-5 text-glow-hover font-bold text-[22px]">
             Front-end Experience
           </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
@@ -87,7 +88,7 @@ export default function About() {
           <Ticker tickerType={"frontend"} tickerDuration={"20"}/>
           <hr className="relative w-[75%] border border-white/20 opacity-50"/>
           {/*backend*/}
-          <h3 className="mt-8 text-glow font-bold text-[22px]">
+          <h3 className="mt-8 text-glow-hover font-bold text-[22px]">
             Back-end Experience
           </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
@@ -95,10 +96,10 @@ export default function About() {
             such as my contacts page!
           </p>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5"/>
-          <Ticker tickerType={"backend"} tickerDuration={"14"} />
+          <Ticker tickerType={"backend"} tickerDuration={"14"}/>
           <hr className="relative w-[75%] border border-white/20 opacity-50"/>
           {/*tools*/}
-          <h3 className="mt-8 text-glow font-bold text-[22px]">
+          <h3 className="mt-8 text-glow-hover font-bold text-[22px]">
             Tools
           </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
@@ -129,18 +130,18 @@ export default function About() {
         <motion.div
           className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs"
         >
-          <h4 className="font-bold text-[25px] text-glow">
+          <h4 className="font-bold text-[25px] text-glow-hover">
             Programming Lead, 2638
           </h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
             <li>
-              Program in <span className="text-glow-hover text-gradient font-bold">Java</span> and <span className="text-glow-hover text-gradient font-bold">WPILib</span> to develop various path-planning systems 
+              Program in <span className="text-gradient font-bold text-glow-hover">Java</span> and <span className="text-gradient font-bold text-glow-hover">WPILib</span> to develop various path-planning systems 
             </li>
             <li>
-              Spearheaded the integration of <span className="text-glow-hover text-gradient font-bold">Choreo</span> and <span className="text-glow-hover text-gradient font-bold">Pathplanner</span> to draw out autonomous pathways
+              Spearheaded the integration of <span className="text-gradient font-bold text-glow-hover">Choreo</span> and <span className="text-gradient font-bold text-glow-hover">Pathplanner</span> to draw out autonomous pathways
             </li>
             <li>
-              Orchestrated the <span className="text-glow-hover text-gradient font-bold">electrical wiring</span> and <span className="text-glow-hover text-gradient font-bold">programming</span> of our off-season robot
+              Orchestrated the <span className="text-gradient font-bold text-glow-hover">electrical wiring</span> and <span className="text-gradient font-bold text-glow-hover">programming</span> of our off-season robot
             </li>
           </ul>
         </motion.div>
