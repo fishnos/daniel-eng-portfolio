@@ -95,7 +95,7 @@ export default function About() {
             such as my contacts page!
           </p>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5"/>
-          <Ticker tickerType={"backend"} tickerDuration={"14"}/>
+          <Ticker tickerType={"backend"} tickerDuration={"14"} />
           <hr className="relative w-[75%] border border-white/20 opacity-50"/>
           {/*tools*/}
           <h3 className="mt-8 text-glow font-bold text-[22px]">
