@@ -25,7 +25,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-white/20 backdrop-blur-2xs py-6 px-6 border border-white/15 rounded-2xl mt-12">
+    <footer className="bg-white/20 py-6 px-6 border border-white/15 rounded-2xl mt-12">
       <AnimatePresence>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 mt-4">
           {/*thanks message*/}

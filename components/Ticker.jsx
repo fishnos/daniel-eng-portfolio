@@ -1,4 +1,3 @@
-//TODO: optimize the images into svgs
 import React from "react";
 import C from '../public/assets/icons/c.svg';
 import CSharp from '../public/assets/icons/c-sharp.svg';
@@ -22,6 +21,9 @@ import TypescriptIcon from '../public/assets/icons/typescript.svg';
 import Arduino from '../public/assets/icons/arduino.svg';
 import VSCodeIcon from '../public/assets/icons/vs-code.svg';
 import RaspPi from '../public/assets/icons/raspberry-pi.svg';
+import VercelIcon from '../public/assets/icons/vercel.svg';
+import Github from '../public/assets/icons/github.svg';
+import Git from '../public/assets/icons/git.svg';
 import { motion } from "framer-motion";
 
 export default function Ticker({ tickerType, tickerDuration }) {
@@ -408,8 +410,57 @@ export default function Ticker({ tickerType, tickerDuration }) {
         <Figma className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Figma</span>
       </motion.a>,
-      //wpilib
-      
+      //vercel
+      <motion.a
+        href="https://vercel.com/daniel-kosukhins-projects"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <VercelIcon className="h-[30px] w-[30px]"/>
+        <span className="text-gradient font-bold">Vercel</span>
+      </motion.a>,
+      //github
+      <motion.a
+        href="https://github.com"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Github className="h-[30px] w-[30px]"/>
+        <span className="text-gradient font-bold">Github</span>
+      </motion.a>,
+      //git
+      <motion.a
+        href="https://git-scm.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Git className="h-[30px] w-[30px]"/>
+        <span className="text-gradient font-bold">Git</span>
+      </motion.a>,
     ],
   };
   const items = tickerTypes[tickerType] || [];
