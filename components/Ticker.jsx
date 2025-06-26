@@ -4,12 +4,24 @@ import css3 from "../public/assets/icons/css-3.png";
 import framerMotion from "../public/assets/icons/framer-motion.png";
 import javaScript from "../public/assets/icons/icons8-javascript.png";
 import typeScript from "../public/assets/icons/typescript.png";
+import react from "../public/assets/icons/react-2.png";
 import html5 from "../public/assets/icons/html-1.png";
 import node from "../public/assets/icons/nodejs-3.png";
 import tailwindCSS from "../public/assets/icons/tailwind-css-2.png";
 import nextJS from "../public/assets/icons/next-js.png";
 import java from "../public/assets/icons/java-4.png";
 import python from "../public/assets/icons/icons8-python-96.png";
+import npm from "../public/assets/icons/npm.png";
+import c from "../public/assets/icons/c.png";
+import cSharp from "../public/assets/icons/c-sharp.png";
+import cPlusPlus from "../public/assets/icons/c++.png";
+import redis from "../public/assets/icons/icons8-redis-96.png";
+import figma from "../public/assets/icons/figma.png";
+import vsCode from "../public/assets/icons/vs-code.png";
+import arduino from "../public/assets/icons/arduino.png";
+import intellij from "../public/assets/icons/icons8-intellij-idea.png";
+import pycharm from "../public/assets/icons/pycharm.png";
+import raspi from "../public/assets/icons/icons8-raspberry-pi-96.png";
 import { motion } from "framer-motion";
 
 export default function Ticker({ tickerType, tickerDuration }) {
@@ -49,6 +61,23 @@ export default function Ticker({ tickerType, tickerDuration }) {
       >
         <Image src={typeScript} alt="typeScript" width={30} height={30} />
         <span className="text-gradient font-bold">TypeScript</span>
+      </motion.a>,
+      //react
+      <motion.a
+        href="https://react.dev/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={react} alt="react" width={30} height={30} />
+        <span className="text-gradient font-bold">React</span>
       </motion.a>,
       //tailwind css
       <motion.a
@@ -189,9 +218,197 @@ export default function Ticker({ tickerType, tickerDuration }) {
         <Image src={node} alt="node" width={30} height={30} />
         <span className="text-gradient font-bold">Node</span>
       </motion.a>,
+      //npm
+      <motion.a
+        href="https://www.npmjs.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={npm} alt="npm" width={30} height={30} />
+        <span className="text-gradient font-bold">npm</span>
+      </motion.a>,
+      //c
+      <motion.a
+        href="https://www.learn-c.org/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={c} alt="c" width={30} height={30} />
+        <span className="text-gradient font-bold">C</span>
+      </motion.a>,
+      //c++
+      <motion.a
+        href="https://isocpp.org/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={cPlusPlus} alt="c++" width={30} height={30} />
+        <span className="text-gradient font-bold">C++</span>
+      </motion.a>,
+      //c#
+      <motion.a
+        href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={cSharp} alt="cSharp" width={30} height={30} />
+        <span className="text-gradient font-bold">C#</span>
+      </motion.a>,
+      //redis
+      <motion.a
+        href="https://redis.io/docs/latest/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={redis} alt="redis" width={30} height={30} />
+        <span className="text-gradient font-bold">Redis</span>
+      </motion.a>,
     ],
     //tools
-    tools: [],
+    tools: [
+      //intellij
+      <motion.a
+        href="https://www.jetbrains.com/idea/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={intellij} alt="intellij" width={30} height={30} />
+        <span className="text-gradient font-bold">Intellij</span>
+      </motion.a>,
+      //pycharm
+      <motion.a
+        href="https://www.jetbrains.com/pycharm/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={pycharm} alt="pycharm" width={30} height={30} />
+        <span className="text-gradient font-bold">Pycharm</span>
+      </motion.a>,
+      //arduino
+      <motion.a
+        href="https://www.arduino.cc/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={arduino} alt="arduino" width={30} height={30} />
+        <span className="text-gradient font-bold">Arduino</span>
+      </motion.a>,
+      //rpi
+      <motion.a
+        href="https://www.raspberrypi.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={raspi} alt="rpi" width={30} height={30} />
+        <span className="text-gradient font-bold">Raspberry PI</span>
+      </motion.a>,
+      //vsCode
+      <motion.a
+        href="https://code.visualstudio.com/"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={vsCode} alt="vscode" width={30} height={30} />
+        <span className="text-gradient font-bold">VS Code</span>
+      </motion.a>,
+      //figma
+      <motion.a
+        href="https://www.figma.com/files/team/1490741904183703387/recents-and-sharing?fuid=1490741902089417471"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <Image src={figma} alt="figma" width={30} height={30} />
+        <span className="text-gradient font-bold">Figma</span>
+      </motion.a>,
+    ],
   };
   const items = tickerTypes[tickerType] || [];
 
@@ -211,7 +428,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       className="w-full h-auto items-center overflow-hidden 
                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_90%,transparent)]"
     >
-      <ul className={`w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_${tickerDuration}s_linear_infinite]`}>
+      <ul className={`w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite]`} style={{animationDuration: `${tickerDuration}s`}}>
         {[...items, ...items].map((item, index) => (
           <li className="items-center flex gap-2 flex-shrink-0" key={index}>
             {item}

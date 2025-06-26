@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { FaSpotify } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -57,16 +58,26 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a
+                      <a
                         href="https://www.linkedin.com/in/daniel-kosukhin-82052634b/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline text-glow-hover"
-                        >
+                      >
                         LinkedIn
-                        </a>
+                      </a>
                     </li>
                     </ul>
+                    <h3 className="text-xl font-semibold mb-2 mt-5 italic">Playlist</h3>
+                    <a
+                        href="https://open.spotify.com/playlist/6TJmJx0AMNlxeOXH6PD8RH?si=39e54f94cee64568"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-row justify-start items-center whitespace-nowrap hover:underline text-glow-hover"
+                        >
+                        Spotify
+                        <FaSpotify color="white" size={20} className="ml-2"/>
+                    </a>
                 </motion.div>
                 {/*navigation*/}
                 <motion.div

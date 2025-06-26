@@ -76,7 +76,7 @@ export default function About() {
           className="w-full flex flex-col gap-1 justify-center items-center bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs py-2"
         >
           {/*frontend*/}
-          <h3 className="mt-2 text-glow font-bold text-[22px]">
+          <h3 className="mt-5 text-glow font-bold text-[22px]">
             Front-end Experience
           </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
@@ -87,20 +87,27 @@ export default function About() {
           <Ticker tickerType={"frontend"} tickerDuration={"20"}/>
           <hr className="relative w-[75%] border border-white/20 opacity-50"/>
           {/*backend*/}
-          <h3 className="mt-2 text-glow font-bold text-[22px]">
+          <h3 className="mt-8 text-glow font-bold text-[22px]">
             Back-end Experience
           </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
-            I have recently began to dive into backend to find innovative alternatives, such as my contacts page!
+            I have recently began to dive into backend to find innovative alternatives, 
+            such as my contacts page!
           </p>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5"/>
-          <Ticker tickerType={"backend"} tickerDuration={"12"}/>
+          <Ticker tickerType={"backend"} tickerDuration={"14"}/>
+          <hr className="relative w-[75%] border border-white/20 opacity-50"/>
+          {/*tools*/}
+          <h3 className="mt-8 text-glow font-bold text-[22px]">
+            Tools
+          </h3>
+          <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
+            I use cutting-edge tools to match an abundant amount of expertise in full-stack development.
+          </p>
+          <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5"/>
+          <Ticker tickerType={"tools"} tickerDuration={"14"}/>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mb-3"/>
         </motion.div>
-        <span className="text-[40px] text-gradient text-glow-hover font-extrabold mt-10">
-          My Tools
-        </span>
-        <Ticker tickerType={"tools"} tickerDuration={"12"}/>
       </motion.h2>
     </div>
   );
