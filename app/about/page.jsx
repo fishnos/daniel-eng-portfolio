@@ -127,20 +127,20 @@ export default function About() {
           My Expertise
         </span>
         <motion.div
-          className="w-full flex flex-col px-4 py-4 gap-1 justify-center items-start bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs py-2"
+          className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs"
         >
           <h4 className="font-bold text-[25px] text-glow">
             Programming Lead, 2638
           </h4>
-          <ul className="w-full flex flex-col gap-1 justify-center items-start list-disc list-outside pl-4">
+          <ul className="list-disc list-inside pl-1 space-y-1">
             <li>
-              Program in <span className="text-glow-hover text-gradient">Java</span> and <span className="text-glow-hover text-gradient">WPILib</span> to develop various path-planning systems 
+              Program in <span className="text-glow-hover text-gradient font-bold">Java</span> and <span className="text-glow-hover text-gradient font-bold">WPILib</span> to develop various path-planning systems 
             </li>
             <li>
-              Spearheaded the integration of <span className="text-glow-hover text-gradient">Choreo</span> and <span className="text-glow-hover text-gradient">Pathplanner</span> to draw out autonomous pathways
+              Spearheaded the integration of <span className="text-glow-hover text-gradient font-bold">Choreo</span> and <span className="text-glow-hover text-gradient font-bold">Pathplanner</span> to draw out autonomous pathways
             </li>
             <li>
-              Orchestrated the <span className="text-glow-hover text-gradient">electrical wiring</span> and <span className="text-glow-hover text-gradient">programming</span> of our off-season robot
+              Orchestrated the <span className="text-glow-hover text-gradient font-bold">electrical wiring</span> and <span className="text-glow-hover text-gradient font-bold">programming</span> of our off-season robot
             </li>
           </ul>
         </motion.div>
