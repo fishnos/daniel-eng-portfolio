@@ -121,12 +121,12 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a className="hover:underline text-glow-hover" href="/">
-                    Home
+                    My Home
                   </a>
                 </li>
                 <li>
                   <a className="hover:underline text-glow-hover" href="/about">
-                    About
+                    Who I Am
                   </a>
                 </li>
                 <li>
@@ -134,7 +134,7 @@ export default function Footer() {
                     className="hover:underline text-glow-hover"
                     href="/projects"
                   >
-                    Projects
+                    View Projects
                   </a>
                 </li>
                 <li>
@@ -142,7 +142,7 @@ export default function Footer() {
                     className="hover:underline text-glow-hover"
                     href="/contact"
                   >
-                    Contact
+                    Contact Me
                   </a>
                 </li>
               </ul>

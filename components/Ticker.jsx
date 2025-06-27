@@ -24,6 +24,7 @@ import RaspPi from '../public/assets/icons/raspberry-pi.svg';
 import VercelIcon from '../public/assets/icons/vercel.svg';
 import Github from '../public/assets/icons/github.svg';
 import Git from '../public/assets/icons/git.svg';
+import CursorIcon from '../public/assets/icons/cursor.svg';
 import { motion } from "framer-motion";
 
 export default function Ticker({ tickerType, tickerDuration }) {
@@ -461,6 +462,22 @@ export default function Ticker({ tickerType, tickerDuration }) {
         <Git className="h-[30px] w-[30px]"/>
         <span className="text-gradient font-bold">Git</span>
       </motion.a>,
+      <motion.a
+        href="https://www.cursor.com/en"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        initial={{ scale: 1 }}
+        whileHover={{
+          boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+            ease: "easeInOut",
+          },
+        }}
+      >
+        <CursorIcon className="h-[30px] w-[30px]"/>
+        <span className="text-gradient font-bold">Cursor</span>
+      </motion.a>,
     ],
   };
   const items = tickerTypes[tickerType] || [];
@@ -482,7 +499,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_90%,transparent)]"
     >
       <ul
-        className="w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform"
+        className="w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform scroll-hover"
         style={{
           animationDuration: `${tickerDuration}s`,
           animationDirection: tickerType === "backend" ? "reverse" : "normal",

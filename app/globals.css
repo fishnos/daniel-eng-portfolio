@@ -162,6 +162,10 @@ body {
   }
 }
 
+.scroll-hover:hover {
+  animation-play-state: paused;
+}
+
 @keyframes scroll-footer {
   0% {
     transform: translateX(0%);

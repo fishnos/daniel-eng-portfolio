@@ -100,7 +100,7 @@ export default function About() {
             full-stack development.
           </p>
           <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5" />
-          <Ticker tickerType={"tools"} tickerDuration={"18"} />
+          <Ticker tickerType={"tools"} tickerDuration={"20"} />
           <hr className="relative w-[75%] border border-white/20 opacity-50 mb-3" />
         </motion.div>
       </motion.h2>
