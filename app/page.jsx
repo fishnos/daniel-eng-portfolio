@@ -134,7 +134,7 @@ export default function HomePage() {
                 exit={{ opacity: 0 }}
                 viewport={{ once: true }}
               >
-                {/*PACS*/}
+                {/*PDCS*/}
                 <motion.a
                   href="/projects"
                   onHoverStart={() => setIsHoveredDrone(true)}
@@ -164,7 +164,7 @@ export default function HomePage() {
                       }}
                       className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
                     >
-                      PACS
+                      PDCS
                     </motion.span>
                   )}
                 </motion.a>

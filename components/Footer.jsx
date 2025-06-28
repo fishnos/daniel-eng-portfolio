@@ -170,9 +170,9 @@ export default function Footer() {
             className={`w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
           >
             {[...footerTicker, ...footerTicker].map((item, index) => (
-                <li className="items-center flex gap-4 flex-shrink-0" key={index}>
-                    {item}
-                </li>
+              <li className="items-center flex gap-4 flex-shrink-0" key={index}>
+                {item}
+              </li>
             ))}
           </ul>
           <hr className="relative w-full border border-white/20 opacity-50"/>

@@ -20,7 +20,20 @@ const geist = Geist({
 
 export const metadata = {
   title: "Daniel's Portfolio",
-  description: "Made by Daniel Kosukhin",
+  description: "Daniel Kosukhin is a passionate problem solver that designs simplistic, user-friendly experiences and innovative mechanical systems.",
+  metadataBase: new URL("https://kosukhin.com"),
+
+  openGraph: {
+    title: "Daniel's Portfolio",
+    images: [
+      {
+        url: "/assets/gradients/sea-gradient.png",
+        width: 500,
+        height: 500,
+        alt: "kosukhin.com preview"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
