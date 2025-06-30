@@ -210,7 +210,7 @@ export default function About() {
                 href="https://ehyg.vercel.app/"
                 aria-label="View Project"
               >
-                <FaExternalLinkAlt color="secondary" size={15} />
+                <FaExternalLinkAlt color="var(--color-secondary)" size={15} />
               </a>
             </li>
             <li>
@@ -223,7 +223,7 @@ export default function About() {
                 href="https://gnswebdev.vercel.app/"
                 aria-label="View Project"
               >
-                <FaExternalLinkAlt color="secondary" size={15} />
+                <FaExternalLinkAlt color="var(--color-secondary)" size={15} />
               </a>
             </li>
           </ul>

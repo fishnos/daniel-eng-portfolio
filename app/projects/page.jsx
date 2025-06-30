@@ -200,7 +200,7 @@ export default function Projects() {
                     <span className="">Progress</span>
                     <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] secondaryspace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li
@@ -219,7 +219,7 @@ export default function Projects() {
                     <span className="">Results</span>
                     <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] secondaryspace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li
@@ -246,7 +246,7 @@ export default function Projects() {
             animate={{ rotate: isOpenPDCS ? 0 : 180 }}
             transition={{ ease: "easeInOut", duration: 0.25, delay: 0.025 }}
           >
-            <IoIosArrowUp size={30} color="secondary" />
+            <IoIosArrowUp size={30} color="var(--color-secondary)" />
           </motion.div>
         </button>
       </motion.div>

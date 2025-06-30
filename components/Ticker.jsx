@@ -499,7 +499,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_90%,transparent)]"
     >
       <ul
-        className="w-max inline-flex gap-5 text-secondary text-[20px] secondaryspace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform scroll-hover"
+        className="w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform scroll-hover"
         style={{
           animationDuration: `${tickerDuration}s`,
           animationDirection: tickerType === "backend" ? "reverse" : "normal",

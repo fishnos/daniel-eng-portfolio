@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import SocialButton from "../components/SocialButton";
-import { FaLinkedin, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaPhone, FaArrowRight } from "react-icons/fa";
 import { MdOutlineQrCode2 } from "react-icons/md";
 import { TbDrone } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,6 +12,8 @@ export default function HomePage() {
   const [isHoveredPhone, setIsHoveredPhone] = useState(false);
   const [isHoveredDrone, setIsHoveredDrone] = useState(false);
   const [isHoveredQR, setIsHoveredQR] = useState(false);
+  const [isHoveredAboutMe, setIsHoveredAboutMe] = useState(false);
+  const [isHoveredGIT, setIsHoveredGIT] = useState(false);
 
   const handleLinkedInClickEvent = (e) => {
     e.preventDefault();
@@ -61,7 +63,7 @@ export default function HomePage() {
                       "Problem-Solver",
                       2000,
                     ]}
-                    className="text-xl text-gray-200 mb-4 secondaryspace-nowrap"
+                    className="text-xl text-gray-200 mb-4 whitespace-nowrap"
                     wrapper="span"
                     speed={40}
                     repeat={Infinity}
@@ -74,19 +76,68 @@ export default function HomePage() {
                 </p>
                 <div className="flex justify-center gap-4">
                   {/*TODO: stylize these buttons and fix the small screen overlap bug*/}
-                  <a
-                    href="/about"
-                    className="px-6 py-2 bg-secondary/20 hover:bg-secondary/30 text-secondary rounded-md font-medium transition"
-                  >
-                    About me →
-                  </a>
-                  <a
+                  <motion.a
                     onClick={handleLinkedInClickEvent}
-                    className="px-6 py-2 bg-secondary/20 hover:bg-secondary/30 text-secondary rounded-md font-medium transition flex items-center gap-2"
+                    onHoverStart={() => setIsHoveredAboutMe(true)}
+                    onHoverEnd={() => setIsHoveredAboutMe(false)}
+                    initial={{
+                      borderColor: "var(--color-quaternary)"
+                    }}
+                    animate={{
+                      borderColor: isHoveredAboutMe ? "var(--color-quaternary-hover)" : "var(--color-quaternary)"
+                    }}
+                    transition={{
+                      duration: 0.25,
+                      ease: "easeInOut"
+                    }}
+                    className="w-auto px-6 py-2 bg-transparent border backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center gap-2"
+                  >
+                    About me
+                    <motion.div
+                      initial={{x: 0}}
+                      animate={{
+                        x: isHoveredAboutMe ? 5 : 0
+                      }}
+                      transition={{
+                        delay: 0.1,
+                        duration: 0.3,
+                        ease: "circInOut"
+                      }}
+                    >
+                      <FaArrowRight size={15} color="var(--color-secondary)" className="ml-1" />
+                    </motion.div>
+                  </motion.a>
+                  <motion.a
+                    onClick={handleLinkedInClickEvent}
+                    onHoverStart={() => setIsHoveredGIT(true)}
+                    onHoverEnd={() => setIsHoveredGIT(false)}
+                    initial={{
+                      borderColor: "var(--color-quaternary)"
+                    }}
+                    animate={{
+                      borderColor: isHoveredGIT ? "var(--color-quaternary-hover)" : "var(--color-quaternary)"
+                    }}
+                    transition={{
+                      duration: 0.25,
+                      ease: "easeInOut"
+                    }}
+                    className="w-auto px-6 py-2 bg-transparent border backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center gap-2"
                   >
                     Get In Touch
-                    <FaLinkedin size={20} color="secondary" className="ml-1" />
-                  </a>
+                    <motion.div
+                      initial={{x: 0}}
+                      animate={{
+                        x: isHoveredGIT ? 5 : 0
+                      }}
+                      transition={{
+                        delay: 0.1,
+                        duration: 0.3,
+                        ease: "circInOut"
+                      }}
+                    >
+                      <FaLinkedin size={20} color="var(--color-secondary)" className="ml-1" />
+                    </motion.div>
+                  </motion.a>
                 </div>
                 <div className="w-full h-[1px] border border-secondary/15 justify-start justify-center mt-5" />
                 <section className="mt-7 ml-4 bg-transparent">
