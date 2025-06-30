@@ -23,6 +23,10 @@
   --font-primary: "JetBrains Mono";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply font-primary bg-primary text-secondary leading-relaxed;
 }

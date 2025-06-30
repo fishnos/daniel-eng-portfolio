@@ -47,6 +47,7 @@ export default function Projects() {
           },
         }}
         viewport={{ once: true }}
+        id="pdcs-projects"
       >
         My Projects
       </motion.h1>

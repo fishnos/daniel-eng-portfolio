@@ -136,7 +136,7 @@ export default function HomePage() {
               >
                 {/*PDCS*/}
                 <motion.a
-                  href="/projects"
+                  href="/projects#pdcs-projects"
                   onHoverStart={() => setIsHoveredDrone(true)}
                   onHoverEnd={() => setIsHoveredDrone(false)}
                   initial={{ width: "60px" }}
