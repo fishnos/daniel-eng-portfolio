@@ -14,14 +14,14 @@ export default function NavBar() {
 
   return <>
     <div className="">
-      <header className="flex translate-x-[5vw] justify-between items-center px-8 py-10 mt-5 h-[25px] w-[90vw] fixed top-0 z-50 backdrop-blur-sm border border-white/15 rounded-full">
+      <header className="flex translate-x-[5vw] justify-between items-center px-8 py-10 mt-5 h-[25px] w-[90vw] fixed top-0 z-50 backdrop-blur-sm border border-secondary/15 rounded-full">
         <h1 className="font-extrabold text-[22px]">
           <a href="/">
             kosukhin.<span className="text-glow-hover text-gradient">tech</span>
           </a>
         </h1>
         <nav>
-          <NavLinks containerStyles={"hidden md:block flex space-x-8 text-white font-semibold justify-between text-lg"}/>
+          <NavLinks containerStyles={"hidden md:block flex space-x-8 text-secondary font-semibold justify-between text-lg"}/>
         </nav>
         <button
           onClick={toggleNavbar}

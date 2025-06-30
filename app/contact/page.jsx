@@ -95,7 +95,7 @@ export default function Contact() {
               rows={6}
               className="
                 mx-auto w-[400px] min-h-[160px]
-                border border-white/25 rounded-2xl
+                border border-secondary/25 rounded-2xl
                 bg-primary backdrop-blur-xs
                 py-2 px-2 resize-none
                 focus:outline-none focus:ring-0 focus:border-[2px]
@@ -111,7 +111,7 @@ export default function Contact() {
             className="
               self-center mt-4 flex items-center justify-center
               w-[150px] h-[50px]
-              rounded-full border-[3px] border-white/35
+              rounded-full border-[3px] border-secondary/35
               bg-primary backdrop-blur-xs
               font-bold text-[14px] text-glow-hover
               focus:outline-none focus:ring-0"

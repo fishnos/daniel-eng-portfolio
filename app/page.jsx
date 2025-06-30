@@ -44,7 +44,7 @@ export default function HomePage() {
             className="flex flex-col w-full items-center xl:flex-row"
           >
             <div className="flex items-start mt-30 justify-center relative w-full overflow-hidden">
-              <div className="bg-white/10 backdrop-blur-xs border border-white/20 shadow-xl rounded-2xl p-10 w-full text-center">
+              <div className="bg-secondary/10 backdrop-blur-xs border border-secondary/20 shadow-xl rounded-2xl p-10 w-full text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
                   Hello, I'm{" "}
                   <span className="text-gradient text-glow-hover">
@@ -61,7 +61,7 @@ export default function HomePage() {
                       "Problem-Solver",
                       2000,
                     ]}
-                    className="text-xl text-gray-200 mb-4 whitespace-nowrap"
+                    className="text-xl text-gray-200 mb-4 secondaryspace-nowrap"
                     wrapper="span"
                     speed={40}
                     repeat={Infinity}
@@ -76,19 +76,19 @@ export default function HomePage() {
                   {/*TODO: stylize these buttons and fix the small screen overlap bug*/}
                   <a
                     href="/about"
-                    className="px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-md font-medium transition"
+                    className="px-6 py-2 bg-secondary/20 hover:bg-secondary/30 text-secondary rounded-md font-medium transition"
                   >
                     About me →
                   </a>
                   <a
                     onClick={handleLinkedInClickEvent}
-                    className="px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-md font-medium transition flex items-center gap-2"
+                    className="px-6 py-2 bg-secondary/20 hover:bg-secondary/30 text-secondary rounded-md font-medium transition flex items-center gap-2"
                   >
                     Get In Touch
-                    <FaLinkedin size={20} color="white" className="ml-1" />
+                    <FaLinkedin size={20} color="secondary" className="ml-1" />
                   </a>
                 </div>
-                <div className="w-full h-[1px] border border-white/15 justify-start justify-center mt-5" />
+                <div className="w-full h-[1px] border border-secondary/15 justify-start justify-center mt-5" />
                 <section className="mt-7 ml-4 bg-transparent">
                   <div className="flex gap-10 w-full md:justify-start items-center justify-center">
                     <SocialButton iconName="Github" />
@@ -120,7 +120,7 @@ export default function HomePage() {
             >
               Projects
               <motion.div
-                className="bg-white/10 relative flex flex-col justify-center items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
+                className="bg-secondary/10 relative flex flex-col justify-center items-start w-full h-auto py-4 border border-secondary/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
                 initial={{ opacity: 0, y: 75 }}
                 whileInView={{
                   opacity: 1,
@@ -145,7 +145,7 @@ export default function HomePage() {
                     boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
                     transition: { duration: 0.3, ease: "easeInOut" },
                   }}
-                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center bg-white/15 overflow-hidden cursor-pointer no-underline"
+                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-secondary/15 rounded-full h-[60px] flex items-center bg-secondary/15 overflow-hidden cursor-pointer no-underline"
                 >
                   <motion.div className="flex items-center justify-center w-[60px] h-[60px]">
                     <TbDrone color="gray" size="40px" />
@@ -179,7 +179,7 @@ export default function HomePage() {
                     boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
                     transition: { duration: 0.2, ease: "easeInOut" },
                   }}
-                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-white/15 rounded-full h-[60px] flex items-center justify-end bg-white/15 overflow-hidden"
+                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-secondary/15 rounded-full h-[60px] flex items-center justify-end bg-secondary/15 overflow-hidden"
                 >
                   {isHoveredQR && (
                     <motion.span
@@ -236,7 +236,7 @@ export default function HomePage() {
               Contact Me
               {/*buttons*/}
               <motion.div
-                className="bg-white/10 relative flex flex-row justify-end items-start w-full h-auto py-4 border border-white/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
+                className="bg-secondary/10 relative flex flex-row justify-end items-start w-full h-auto py-4 border border-secondary/20 rounded-2xl backdrop-blur-xs z-10 gap-5"
                 initial={{ opacity: 0, y: 75 }}
                 whileInView={{
                   opacity: 1,
@@ -266,7 +266,7 @@ export default function HomePage() {
                     )}
                   </AnimatePresence>
                   <motion.div
-                    className="flex items-center justify-center h-[50px] w-[50px] border border-white/15 rounded-xl border-[3px]"
+                    className="flex items-center justify-center h-[50px] w-[50px] border border-secondary/15 rounded-xl border-[3px]"
                     onHoverStart={() => setIsHoveredPhone(true)}
                     onHoverEnd={() => setIsHoveredPhone(false)}
                     initial={{ scale: 1 }}

@@ -13,23 +13,23 @@ export default function Projects() {
 
   const footerTicker = [
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
     <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-white w-6 h-6" />,
+    <LuConstruction className="text-secondary w-6 h-6" />,
   ];
 
   return (
@@ -47,13 +47,11 @@ export default function Projects() {
           },
         }}
         viewport={{ once: true }}
-        id="pdcs-projects"
       >
         My Projects
       </motion.h1>
-      {/*TODO: add a reusable component?*/}
       <motion.div
-        className="w-full py-4 px-8 bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs gap-3 justify-center items-start"
+        className="w-full py-4 px-8 bg-secondary/10 border border-secondary/15 rounded-2xl backdrop-blur-xs gap-3 justify-center items-start"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,
@@ -66,15 +64,18 @@ export default function Projects() {
         }}
         viewport={{ once: true }}
       >
-        <h2 className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient">
+        <h2
+          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient"
+          id="pdcs-projects"
+        >
           Photographical Drone Computing System
-          <span className="opacity-60 text-white text-[20px] italic">
+          <span className="opacity-60 text-secondary text-[20px] italic">
             (Starting Sept. 2025)
           </span>
         </h2>
         <div>
           <Image
-            className="relative w-[100%] h-auto mt-5 border border-white/15 border-[5px] rounded-2xl"
+            className="relative w-[100%] h-auto mt-5 border border-secondary/15 border-[5px] rounded-2xl"
             src={dronePhoto}
             alt="drone-photo"
           />
@@ -90,106 +91,116 @@ export default function Projects() {
               className="overflow-hidden mt-4 flex w-full justify-center items-center"
             >
               <div className="flex flex-col justify-center items-start w-full gap-5">
-                <div className="w-full ml-8">
+                <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
                     Goals
                   </h3>
                   <div className="w-full grid grid-cols-2">
-                    <motion.div
-                      className="relative w-[90%] border border-white/10 border-[2px] rounded-2xl p-2"
-                      initial={{ borderColor: "rgba(255, 255, 255, 0.1)" }}
-                      whileHover={{
-                        borderColor: "rgba(255, 255, 255, 0.25)",
-                        transition: {
-                          delay: 0.05,
-                          duration: 0.25,
-                          ease: "easeInOut",
-                        },
-                      }}
-                    >
-                      <h4 className="opacity-60 italic underline text-[18px] font-bold">
-                        Issues
-                      </h4>
-                      <p className="font-semibold">
-                        Often, piloting a{" "}
-                        <span className="text-gradient font-bold">drone</span>{" "}
-                        through tight terrain takes{" "}
-                        <span className="text-gradient font-bold">
-                          years of experience
-                        </span>{" "}
-                        and training to{" "}
-                        <span className="text-gradient font-bold">safely</span>{" "}
-                        record{" "}
-                        <span className="text-gradient font-bold">
-                          cutting-edge
-                        </span>{" "}
-                        videos or photographs. Inexperienced cinematographers
-                        are often{" "}
-                        <span className="text-gradient font-bold">unable</span>{" "}
-                        to safely pilot a drone through{" "}
-                        <span className="text-gradient font-bold">
-                          buildings or caves
-                        </span>
-                        , raising moral issues and danger for nearby personal.
-                      </p>
-                    </motion.div>
-                    <motion.div
-                      className="relative w-[90%] border border-white/10 border-[2px] rounded-2xl p-2"
-                      initial={{ borderColor: "rgba(255, 255, 255, 0.1)" }}
-                      whileHover={{
-                        borderColor: "rgba(255, 255, 255, 0.25)",
-                        transition: {
-                          delay: 0.05,
-                          duration: 0.25,
-                          ease: "easeInOut",
-                        },
-                      }}
-                    >
-                      <h4 className="opacity-60 italic underline text-[18px] font-bold">
-                        Solutions
-                      </h4>
-                      <p className="font-semibold">
-                        By creating a high-speed{" "}
-                        <span className="text-gradient font-bold">
-                          algorithm
-                        </span>{" "}
-                        using{" "}
-                        <span className="text-gradient font-bold">LLM's</span>{" "}
-                        and rigorous{" "}
-                        <span className="text-gradient font-bold">
-                          data training
-                        </span>
-                        , photographers from{" "}
-                        <span className="text-gradient font-bold">
-                          all skill levels
-                        </span>{" "}
-                        will be able to record aerial footage within{" "}
-                        <span className="text-gradient font-bold">rough</span>{" "}
-                        or{" "}
-                        <span className="text-gradient font-bold">cramped</span>{" "}
-                        terrains. The LLM will be able to{" "}
-                        <span className="text-gradient font-bold">
-                          outline a path
-                        </span>{" "}
-                        and avoid{" "}
-                        <span className="text-gradient font-bold">
-                          obstacles
-                        </span>{" "}
-                        while maintaining{" "}
-                        <span className="text-gradient font-bold">
-                          optimal speeds
-                        </span>
-                        .
-                      </p>
-                    </motion.div>
+                    <div className="w-full flex justify-center">
+                      <motion.div
+                        className="relative w-[90%] border border-secondary/10 border-[2px] rounded-2xl p-2"
+                        initial={{ borderColor: "var(--color-quaternary)" }}
+                        whileHover={{
+                          borderColor: "var(--color-quaternary-hover)",
+                          transition: {
+                            delay: 0.05,
+                            duration: 0.25,
+                            ease: "easeInOut",
+                          },
+                        }}
+                      >
+                        <h4 className="opacity-60 italic underline text-[18px] font-bold">
+                          Issues
+                        </h4>
+                        <p className="font-semibold">
+                          Often, piloting a{" "}
+                          <span className="text-gradient font-bold">drone</span>{" "}
+                          through tight terrain takes{" "}
+                          <span className="text-gradient font-bold">
+                            years of experience
+                          </span>{" "}
+                          and training to{" "}
+                          <span className="text-gradient font-bold">
+                            safely
+                          </span>{" "}
+                          record{" "}
+                          <span className="text-gradient font-bold">
+                            cutting-edge
+                          </span>{" "}
+                          videos or photographs. Inexperienced cinematographers
+                          are often{" "}
+                          <span className="text-gradient font-bold">
+                            unable
+                          </span>{" "}
+                          to safely pilot a drone through{" "}
+                          <span className="text-gradient font-bold">
+                            buildings or caves
+                          </span>
+                          , raising moral issues and danger for nearby personal.
+                        </p>
+                      </motion.div>
+                    </div>
+                    <div className="w-full flex justify-center">
+                      <motion.div
+                        className="relative w-[90%] border border-secondary/10 border-[2px] rounded-2xl p-2"
+                        initial={{ borderColor: "var(--color-quaternary)" }}
+                        whileHover={{
+                          borderColor: "var(--color-quaternary-hover)",
+                          transition: {
+                            delay: 0.05,
+                            duration: 0.25,
+                            ease: "easeInOut",
+                          },
+                        }}
+                      >
+                        <h4 className="opacity-60 italic underline text-[18px] font-bold">
+                          Solutions
+                        </h4>
+                        <p className="font-semibold">
+                          By creating a high-speed{" "}
+                          <span className="text-gradient font-bold">
+                            algorithm
+                          </span>{" "}
+                          using{" "}
+                          <span className="text-gradient font-bold">LLM's</span>{" "}
+                          and rigorous{" "}
+                          <span className="text-gradient font-bold">
+                            data training
+                          </span>
+                          , photographers from{" "}
+                          <span className="text-gradient font-bold">
+                            all skill levels
+                          </span>{" "}
+                          will be able to record aerial footage within{" "}
+                          <span className="text-gradient font-bold">rough</span>{" "}
+                          or{" "}
+                          <span className="text-gradient font-bold">
+                            cramped
+                          </span>{" "}
+                          terrains. The LLM will be able to{" "}
+                          <span className="text-gradient font-bold">
+                            outline a path
+                          </span>{" "}
+                          and avoid{" "}
+                          <span className="text-gradient font-bold">
+                            obstacles
+                          </span>{" "}
+                          while maintaining{" "}
+                          <span className="text-gradient font-bold">
+                            optimal speeds
+                          </span>
+                          .
+                        </p>
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
-                    <span className="ml-8">Progress</span>
-                    <hr className="w-full border border-white/20 opacity-50 mt-4" />
+                    <span className="">Progress</span>
+                    <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] secondaryspace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li
@@ -200,15 +211,15 @@ export default function Projects() {
                         </li>
                       ))}
                     </ul>
-                    <hr className="w-full border border-white/20 opacity-50 mt" />
+                    <hr className="w-full border border-secondary/20 opacity-50 mt" />
                   </h3>
                 </div>
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
-                    <span className="ml-8">Results</span>
-                    <hr className="w-full border border-white/20 opacity-50 mt-4" />
+                    <span className="">Results</span>
+                    <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] secondaryspace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li
@@ -219,7 +230,7 @@ export default function Projects() {
                         </li>
                       ))}
                     </ul>
-                    <hr className="w-full border border-white/20 opacity-50 mt" />
+                    <hr className="w-full border border-secondary/20 opacity-50 mt" />
                   </h3>
                 </div>
               </div>
@@ -235,7 +246,7 @@ export default function Projects() {
             animate={{ rotate: isOpenPDCS ? 0 : 180 }}
             transition={{ ease: "easeInOut", duration: 0.25, delay: 0.025 }}
           >
-            <IoIosArrowUp size={30} color="white" />
+            <IoIosArrowUp size={30} color="secondary" />
           </motion.div>
         </button>
       </motion.div>

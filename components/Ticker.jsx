@@ -34,7 +34,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //javascript
       <motion.a
         href="https://www.javascript.com/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -51,7 +51,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //typescript
       <motion.a
         href="https://www.typescriptlang.org/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -68,7 +68,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //react
       <motion.a
         href="https://react.dev/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -85,7 +85,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //tailwind css
       <motion.a
         href="https://tailwindcss.com/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -102,7 +102,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //css
       <motion.a
         href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -119,7 +119,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //html
       <motion.a
         href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -136,7 +136,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //framer-motion
       <motion.a
         href="https://motion.dev/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -153,7 +153,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //next
       <motion.a
         href="https://motion.dev/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -173,7 +173,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //java
       <motion.a
         href="https://www.java.com/en/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -190,7 +190,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //python
       <motion.a
         href="https://www.python.org/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -207,7 +207,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //node
       <motion.a
         href="https://nodejs.org/en"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -224,7 +224,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //npm
       <motion.a
         href="https://www.npmjs.com/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -241,7 +241,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //c
       <motion.a
         href="https://www.learn-c.org/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -258,7 +258,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //c++
       <motion.a
         href="https://isocpp.org/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -275,7 +275,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //c#
       <motion.a
         href="https://learn.microsoft.com/en-us/dotnet/csharp/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -292,7 +292,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //redis
       <motion.a
         href="https://redis.io/docs/latest/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -312,7 +312,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //intellij
       <motion.a
         href="https://www.jetbrains.com/idea/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -329,7 +329,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //pycharm
       <motion.a
         href="https://www.jetbrains.com/pycharm/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -346,7 +346,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //arduino
       <motion.a
         href="https://www.arduino.cc/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -363,7 +363,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //rpi
       <motion.a
         href="https://www.raspberrypi.com/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -380,7 +380,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //vsCode
       <motion.a
         href="https://code.visualstudio.com/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -397,7 +397,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //figma
       <motion.a
         href="https://www.figma.com/files/team/1490741904183703387/recents-and-sharing?fuid=1490741902089417471"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -414,7 +414,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //vercel
       <motion.a
         href="https://vercel.com/daniel-kosukhins-projects"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -431,7 +431,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //github
       <motion.a
         href="https://github.com"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -448,7 +448,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       //git
       <motion.a
         href="https://git-scm.com/"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -464,7 +464,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
       </motion.a>,
       <motion.a
         href="https://www.cursor.com/en"
-        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-white/15 rounded-2xl w-auto h-auto bg-white/0 text-white"
+        className="flex flex-row justify-center items-center gap-2 py-2 px-4 border border-secondary/15 rounded-2xl w-auto h-auto bg-secondary/0 text-secondary"
         initial={{ scale: 1 }}
         whileHover={{
           boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
@@ -499,7 +499,7 @@ export default function Ticker({ tickerType, tickerDuration }) {
                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_90%,transparent)]"
     >
       <ul
-        className="w-max inline-flex gap-5 text-white text-[20px] whitespace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform scroll-hover"
+        className="w-max inline-flex gap-5 text-secondary text-[20px] secondaryspace-nowrap py-4 animate-[scroll_linear_infinite] will-change-transform scroll-hover"
         style={{
           animationDuration: `${tickerDuration}s`,
           animationDirection: tickerType === "backend" ? "reverse" : "normal",

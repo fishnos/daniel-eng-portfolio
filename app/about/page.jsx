@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className="gap-10">
-      <div className="px-10 py-8 flex flex-col w-full h-auto bg-white/10 backdrop-blur-xs justify-center mt-35 border border-white/15 rounded-2xl">
+      <div className="px-10 py-8 flex flex-col w-full h-auto bg-secondary/10 backdrop-blur-xs justify-center mt-35 border border-secondary/15 rounded-2xl">
         <motion.div
           initial={{ opacity: 0, y: 75 }}
           whileInView={{
@@ -31,7 +31,7 @@ export default function About() {
             width={250}
             height={250}
             priority
-            className="border border-white/15 border-[4px] rounded-full"
+            className="border border-secondary/15 border-[4px] rounded-full"
           />
           <motion.div
             className="w-full ml-4 md:ml-0"
@@ -50,7 +50,7 @@ export default function About() {
             <h1 className="font-extrabold text-gradient text-[35px]">
               Hey, I'm Daniel (▰˘◡˘▰)
             </h1>
-            <p className="mt-2 font-bold text-[25px] text-white">
+            <p className="mt-2 font-bold text-[25px] text-secondary">
               I am a passionate front-end developer that specializes in
               mechatronics, located in NY.
             </p>
@@ -74,34 +74,34 @@ export default function About() {
         <span className="text-[40px] text-gradient font-extrabold mt-10">
           My Skills
         </span>
-        <motion.div className="w-full flex flex-col gap-1 justify-center items-center bg-white/10 border border-white/15 rounded-2xl backdrop-blur-xs py-2">
+        <motion.div className="w-full flex flex-col gap-1 justify-center items-center bg-secondary/10 border border-secondary/15 rounded-2xl backdrop-blur-xs py-2">
           {/*frontend*/}
           <h3 className="mt-5 font-bold text-[22px]">Front-end Experience</h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             Using a multitude of languages in my toolkit, I develop captivating
             and engaging designs focused on user-friendliness.
           </p>
-          <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5" />
+          <hr className="relative w-[75%] border border-secondary/20 opacity-50 mt-5" />
           <Ticker tickerType={"frontend"} tickerDuration={"20"} />
-          <hr className="relative w-[75%] border border-white/20 opacity-50" />
+          <hr className="relative w-[75%] border border-secondary/20 opacity-50" />
           {/*backend*/}
           <h3 className="mt-8  font-bold text-[22px]">Back-end Experience</h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             I have recently begun to dive into backend to find innovative
             alternatives, such as my contacts page.
           </p>
-          <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5" />
+          <hr className="relative w-[75%] border border-secondary/20 opacity-50 mt-5" />
           <Ticker tickerType={"backend"} tickerDuration={"14"} />
-          <hr className="relative w-[75%] border border-white/20 opacity-50" />
+          <hr className="relative w-[75%] border border-secondary/20 opacity-50" />
           {/*tools*/}
           <h3 className="mt-8  font-bold text-[22px]">Tools</h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             I use cutting-edge tools to match an abundant amount of expertise in
             full-stack development.
           </p>
-          <hr className="relative w-[75%] border border-white/20 opacity-50 mt-5" />
+          <hr className="relative w-[75%] border border-secondary/20 opacity-50 mt-5" />
           <Ticker tickerType={"tools"} tickerDuration={"20"} />
-          <hr className="relative w-[75%] border border-white/20 opacity-50 mb-3" />
+          <hr className="relative w-[75%] border border-secondary/20 opacity-50 mb-3" />
         </motion.div>
       </motion.h2>
       <motion.h2
@@ -121,7 +121,7 @@ export default function About() {
         <span className="text-[40px] text-gradient font-extrabold mt-10">
           My Expertise
         </span>
-        <motion.div className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-white/10 border border-white/15 rounded-2xl">
+        <motion.div className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-secondary/10 border border-secondary/15 rounded-2xl">
           {/*programming lead*/}
           <h4 className="font-bold text-[25px]">Programming Lead, 2638</h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
@@ -210,7 +210,7 @@ export default function About() {
                 href="https://ehyg.vercel.app/"
                 aria-label="View Project"
               >
-                <FaExternalLinkAlt color="white" size={15} />
+                <FaExternalLinkAlt color="secondary" size={15} />
               </a>
             </li>
             <li>
@@ -223,7 +223,7 @@ export default function About() {
                 href="https://gnswebdev.vercel.app/"
                 aria-label="View Project"
               >
-                <FaExternalLinkAlt color="white" size={15} />
+                <FaExternalLinkAlt color="secondary" size={15} />
               </a>
             </li>
           </ul>

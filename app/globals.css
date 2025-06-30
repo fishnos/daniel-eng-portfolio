@@ -2,22 +2,22 @@
 @import "tw-animate-css";
 
 @theme {
-  /*breakpoints*/
+  /* breakpoints */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1130px;
   --breakpoint-2xl: 1520;
 
-  /*colors*/
-  --color-primary: #0c161b;
-  --color-secondary: #e8e4e0;
-  --color-accent: #cbeff0;
-  --color-accent-hover: #d8ebeb;
-  --color-tertiary: #8fe0f1;
-  --color-tertiary-hover: #c5e5ec;
-  --color-quaternary: #fa9819;
-  --color-quaternary-hover: #eeaf5d;
+  /* colors */
+  --color-primary: #0c161b; /* navy blue */
+  --color-secondary: #ecf3f4; /* creamy white */
+  --color-accent: #cbeff0; /* sea blue */
+  --color-accent-hover: #d8ebeb; /* light sea blue */
+  --color-tertiary: #8fe0f1; /* sky cyan */
+  --color-tertiary-hover: #c5e5ec; /* light sky cyan */
+  --color-quaternary: rgba(236, 243, 244, 0.15); /* low-opacity secondary */
+  --color-quaternary-hover: rgba(236, 243, 244, 0.35); /* high-opacity secondary */
 
   /*fonts*/
   --font-primary: "JetBrains Mono";
@@ -58,7 +58,7 @@ body {
   @apply text-[22px] md:text-[26px] leading-snug font-medium;
 }
 
-.container {
+/* .container {
   @apply px-[15px];
 }
 
@@ -81,7 +81,7 @@ body {
 
 .btn-tertiary {
   @apply bg-tertiary hover:bg-tertiary-hover;
-}
+} */
 
 .cursor {
   display: block;

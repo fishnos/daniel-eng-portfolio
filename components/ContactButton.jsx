@@ -38,7 +38,7 @@ export default function ContactButton({ containerStyles, iconName }) {
         )}
       </AnimatePresence>
       <motion.div
-        className="flex items-center justify-center h-[50px] w-[50px] border border-white/15 rounded-xl border-[3px]"
+        className="flex items-center justify-center h-[50px] w-[50px] border border-secondary/15 rounded-xl border-[3px]"
         onHoverStart={() => setIsHoveredPhone(true)}
         onHoverEnd={() => setIsHoveredPhone(false)}
         initial={{ scale: 1 }}

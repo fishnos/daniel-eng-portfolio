@@ -32,8 +32,8 @@ export default function TextInput({
           </label>
         )}
         <input
-          className={`items-center border border-white/25 border-[1px] rounded-xl w-[400px] py-1 px-2
-                    focus:outline-none focus:ring-0 font-semibold focus:border-white/35 focus:border-[2px]
+          className={`items-center border border-secondary/25 border-[1px] rounded-xl w-[400px] py-1 px-2
+                    focus:outline-none focus:ring-0 font-semibold focus:border-secondary/35 focus:border-[2px]
                     bg-primary backdrop-blur-xs ${containerStyles}`}
           placeholder={`${placeholder}`}
           required

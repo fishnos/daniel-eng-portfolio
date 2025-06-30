@@ -5,7 +5,7 @@ export default function TextTransition({ containerStyles, fileLink }) {
   return (
     <motion.h1
       initial={{ color: "black" }}
-      animate={{ color: "black, white" }}
+      animate={{ color: "black, secondary" }}
       transition={{ delay: 2, duration: 0.5, ease: "easeInOut" }}
       className={containerStyles}
     >

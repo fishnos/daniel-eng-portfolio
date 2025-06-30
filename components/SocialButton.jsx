@@ -38,7 +38,7 @@ export default function SocialButton({ containerStyles, iconName }) {
 
   return (
     <motion.div
-      className="flex items-center justify-center h-[50px] w-[50px] border border-white/15 rounded-xl border-[3px]"
+      className="flex items-center justify-center h-[50px] w-[50px] border border-secondary/15 rounded-xl border-[3px]"
       initial={{scale: 1}}
       whileHover={{
         boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
