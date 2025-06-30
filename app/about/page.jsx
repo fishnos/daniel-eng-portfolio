@@ -3,6 +3,7 @@
 import React from "react";
 import idPhoto from "../../public/assets/profile/id-photo.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { isMobile } from "react-device-detect";
 import Ticker from "../../components/Ticker";
 import { motion } from "framer-motion";
 import Image from "next/image";

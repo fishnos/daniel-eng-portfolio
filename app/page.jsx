@@ -4,14 +4,16 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import SocialButton from "../components/SocialButton";
 import { FaLinkedin, FaPhone, FaArrowRight } from "react-icons/fa";
+import { TbAlphabetKorean } from "react-icons/tb";
 import { MdOutlineQrCode2 } from "react-icons/md";
 import { TbDrone } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomePage() {
-  const [isHoveredPhone, setIsHoveredPhone] = useState(false);
   const [isHoveredDrone, setIsHoveredDrone] = useState(false);
   const [isHoveredQR, setIsHoveredQR] = useState(false);
+  const [isHoveredEHYG, setIsHoveredEHYG] = useState(false);
+  const [isHoveredPhone, setIsHoveredPhone] = useState(false);
   const [isHoveredAboutMe, setIsHoveredAboutMe] = useState(false);
   const [isHoveredGIT, setIsHoveredGIT] = useState(false);
 
@@ -221,7 +223,7 @@ export default function HomePage() {
                 </motion.a>
                 {/*wpilib*/}
                 <motion.a
-                  href="/projects"
+                  href="/projects#wpilib-automation"
                   onHoverStart={() => setIsHoveredQR(true)}
                   onHoverEnd={() => setIsHoveredQR(false)}
                   initial={{ width: "60px" }}
@@ -260,6 +262,40 @@ export default function HomePage() {
                     />
                   </motion.div>
                 </motion.a>
+                {/*EHYG Website*/}
+                <motion.a
+                  href="/projects#ehyg-web"
+                  onHoverStart={() => setIsHoveredEHYG(true)}
+                  onHoverEnd={() => setIsHoveredEHYG(false)}
+                  initial={{ width: "60px" }}
+                  whileHover={{
+                    width: "100%",
+                    boxShadow: "0px 10px 20px rgba(64, 72, 72, 0.42)",
+                    transition: { duration: 0.3, ease: "easeInOut" },
+                  }}
+                  className="ml-8 mr-8 max-w-[calc(100%-4rem)] z-50 border border-secondary/15 rounded-full h-[60px] flex items-center bg-secondary/15 overflow-hidden cursor-pointer no-underline"
+                >
+                  <motion.div className="flex items-center justify-center w-[60px] h-[60px]">
+                    <TbAlphabetKorean color="gray" size="40px" />
+                  </motion.div>
+                  {isHoveredEHYG && (
+                    <motion.span
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{
+                        opacity: isHoveredEHYG ? 1 : 0,
+                        x: isHoveredEHYG ? 0 : -10,
+                        transition: {
+                          duration: 0.3,
+                          delay: 0.2,
+                          ease: "easeInOut",
+                        },
+                      }}
+                      className="ml-2 text-glow text-gradient font-extrabold text-[20px]"
+                    >
+                      Eunhae Youth Group Website
+                    </motion.span>
+                  )}
+                </motion.a>
               </motion.div>
             </motion.h2>
           </section>
@@ -275,8 +311,8 @@ export default function HomePage() {
                 opacity: 1,
                 y: 0,
                 transition: {
-                  delay: 0.2,
-                  duration: 0.55,
+                  delay: 0.1,
+                  duration: 0.45,
                   ease: "circInOut",
                 },
               }}
@@ -293,8 +329,8 @@ export default function HomePage() {
                   opacity: 1,
                   y: 0,
                   transition: {
-                    delay: 0.2,
-                    duration: 0.55,
+                    delay: 0.1,
+                    duration: 0.45,
                     ease: "circInOut",
                   },
                 }}

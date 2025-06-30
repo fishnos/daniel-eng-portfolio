@@ -116,7 +116,7 @@ export default function Contact() {
               font-bold text-[14px] text-glow-hover
               focus:outline-none focus:ring-0"
             whileHover={{ scale: 1.075 }}
-            transition={{ type: "easeInOut", stiffness: 300 }}
+            transition={{ type: "circInOut", stiffness: 300 }}
           >
             {status === "sending"
               ? <span>
