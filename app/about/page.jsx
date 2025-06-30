@@ -47,7 +47,7 @@ export default function About() {
             }}
             viewport={{ once: true }}
           >
-            <h1 className="font-extrabold text-gradient text-[35px]">
+            <h1 className="font-extrabold text-gradient text-[35px] text-glow">
               Hey, I'm Daniel (▰˘◡˘▰)
             </h1>
             <p className="mt-2 font-bold text-[25px] text-secondary">
@@ -76,7 +76,7 @@ export default function About() {
         </span>
         <motion.div className="w-full flex flex-col gap-1 justify-center items-center bg-secondary/10 border border-secondary/15 rounded-2xl backdrop-blur-xs py-2">
           {/*frontend*/}
-          <h3 className="mt-5 font-bold text-[22px]">Front-end Experience</h3>
+          <h3 className="mt-5 font-bold text-[22px] text-glow">Front-end Experience</h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             Using a multitude of languages in my toolkit, I develop captivating
             and engaging designs focused on user-friendliness.
@@ -85,7 +85,7 @@ export default function About() {
           <Ticker tickerType={"frontend"} tickerDuration={"20"} />
           <hr className="relative w-[75%] border border-secondary/20 opacity-50" />
           {/*backend*/}
-          <h3 className="mt-8  font-bold text-[22px]">Back-end Experience</h3>
+          <h3 className="mt-8  font-bold text-[22px] text-glow">Back-end Experience</h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             I have recently begun to dive into backend to find innovative
             alternatives, such as my contacts page.
@@ -94,7 +94,7 @@ export default function About() {
           <Ticker tickerType={"backend"} tickerDuration={"14"} />
           <hr className="relative w-[75%] border border-secondary/20 opacity-50" />
           {/*tools*/}
-          <h3 className="mt-8  font-bold text-[22px]">Tools</h3>
+          <h3 className="mt-8  font-bold text-[22px] text-glow">Tools</h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             I use cutting-edge tools to match an abundant amount of expertise in
             full-stack development.
@@ -123,7 +123,7 @@ export default function About() {
         </span>
         <motion.div className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-secondary/10 border border-secondary/15 rounded-2xl">
           {/*programming lead*/}
-          <h4 className="font-bold text-[25px]">Programming Lead, 2638</h4>
+          <h4 className="font-bold text-[25px] text-glow">Programming Lead, 2638</h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
             <li>
               Program in <span className="text-gradient font-bold ">Java</span>{" "}
@@ -146,7 +146,7 @@ export default function About() {
             </li>
           </ul>
           {/*sound chief*/}
-          <h4 className="font-bold text-[25px] mt-6">
+          <h4 className="font-bold text-[25px] mt-6 text-glow">
             Sound Chief and Manager
           </h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
@@ -177,7 +177,7 @@ export default function About() {
             </li>
           </ul>
           {/*programming club board*/}
-          <h4 className="font-bold text-[25px] mt-6">
+          <h4 className="font-bold text-[25px] mt-6 text-glow">
             Board of the Programming Club
           </h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
@@ -195,7 +195,7 @@ export default function About() {
             </li>
           </ul>
           {/*local web developer*/}
-          <h4 className="font-bold text-[25px]  mt-6">
+          <h4 className="font-bold text-[25px] mt-6 text-glow">
             Local website developer
           </h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
