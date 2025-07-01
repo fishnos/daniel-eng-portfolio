@@ -76,7 +76,7 @@ export default function HomePage() {
                   I specialize in creating technology that solves problems with
                   optimality and practicality.
                 </p>
-                <div className="flex justify-center gap-4">
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
                   {/*TODO: stylize these buttons and fix the small screen overlap bug*/}
                   <motion.a
                     onClick={handleLinkedInClickEvent}

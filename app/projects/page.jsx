@@ -37,7 +37,7 @@ export default function Projects() {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-5">
       <motion.h1
-        className="text-[50px] text-gradient mt-30 font-extrabold"
+        className="text-[50px] text-gradient mt-30 font-extrabold text-glow-hover"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,
@@ -68,7 +68,7 @@ export default function Projects() {
         viewport={{ once: true }}
       >
         <h2
-          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient"
+          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient text-glow-hover"
           id="pdcs-projects"
         >
           Photographical Drone Computing System
@@ -269,7 +269,7 @@ export default function Projects() {
         viewport={{ once: true }}
       >
         <h2
-          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient"
+          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient text-glow-hover"
           id="wpilib-automation"
         >
           WPILib Automation
@@ -322,30 +322,7 @@ export default function Projects() {
                           Issues
                         </h4>
                         <p className="font-semibold">
-                          Often, piloting a{" "}
-                          <span className="text-gradient font-bold">drone</span>{" "}
-                          through tight terrain takes{" "}
-                          <span className="text-gradient font-bold">
-                            years of experience
-                          </span>{" "}
-                          and training to{" "}
-                          <span className="text-gradient font-bold">
-                            safely
-                          </span>{" "}
-                          record{" "}
-                          <span className="text-gradient font-bold">
-                            cutting-edge
-                          </span>{" "}
-                          videos or photographs. Inexperienced cinematographers
-                          are often{" "}
-                          <span className="text-gradient font-bold">
-                            unable
-                          </span>{" "}
-                          to safely pilot a drone through{" "}
-                          <span className="text-gradient font-bold">
-                            buildings or caves
-                          </span>
-                          , raising moral issues and danger for nearby personal.
+                          <span className="text-gradient font-bold">yap abt michael being boosted here</span>{" "}
                         </p>
                       </motion.div>
                     </div>
@@ -366,39 +343,7 @@ export default function Projects() {
                           Solutions
                         </h4>
                         <p className="font-semibold">
-                          By creating a high-speed{" "}
-                          <span className="text-gradient font-bold">
-                            algorithm
-                          </span>{" "}
-                          using{" "}
-                          <span className="text-gradient font-bold">LLM's</span>{" "}
-                          and rigorous{" "}
-                          <span className="text-gradient font-bold">
-                            data training
-                          </span>
-                          , photographers from{" "}
-                          <span className="text-gradient font-bold">
-                            all skill levels
-                          </span>{" "}
-                          will be able to record aerial footage within{" "}
-                          <span className="text-gradient font-bold">rough</span>{" "}
-                          or{" "}
-                          <span className="text-gradient font-bold">
-                            cramped
-                          </span>{" "}
-                          terrains. The LLM will be able to{" "}
-                          <span className="text-gradient font-bold">
-                            outline a path
-                          </span>{" "}
-                          and avoid{" "}
-                          <span className="text-gradient font-bold">
-                            obstacles
-                          </span>{" "}
-                          while maintaining{" "}
-                          <span className="text-gradient font-bold">
-                            optimal speeds
-                          </span>
-                          .
+                          Filler
                         </p>
                       </motion.div>
                     </div>
@@ -406,7 +351,7 @@ export default function Projects() {
                 </div>
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
-                    <span className="">Progress</span>
+                    <span className="">Process</span>
                     <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
                       className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
@@ -463,7 +408,7 @@ export default function Projects() {
         viewport={{ once: true }}
       >
         <h2
-          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient"
+          className="w-full flex flex-col justify-center items-start font-extrabold text-[30px] text-gradient text-glow-hover"
           id="ehyg-web"
         >
           Eunhae Youth Group Website
@@ -516,30 +461,7 @@ export default function Projects() {
                           Issues
                         </h4>
                         <p className="font-semibold">
-                          Often, piloting a{" "}
-                          <span className="text-gradient font-bold">drone</span>{" "}
-                          through tight terrain takes{" "}
-                          <span className="text-gradient font-bold">
-                            years of experience
-                          </span>{" "}
-                          and training to{" "}
-                          <span className="text-gradient font-bold">
-                            safely
-                          </span>{" "}
-                          record{" "}
-                          <span className="text-gradient font-bold">
-                            cutting-edge
-                          </span>{" "}
-                          videos or photographs. Inexperienced cinematographers
-                          are often{" "}
-                          <span className="text-gradient font-bold">
-                            unable
-                          </span>{" "}
-                          to safely pilot a drone through{" "}
-                          <span className="text-gradient font-bold">
-                            buildings or caves
-                          </span>
-                          , raising moral issues and danger for nearby personal.
+                          Filler
                         </p>
                       </motion.div>
                     </div>
@@ -560,39 +482,7 @@ export default function Projects() {
                           Solutions
                         </h4>
                         <p className="font-semibold">
-                          By creating a high-speed{" "}
-                          <span className="text-gradient font-bold">
-                            algorithm
-                          </span>{" "}
-                          using{" "}
-                          <span className="text-gradient font-bold">LLM's</span>{" "}
-                          and rigorous{" "}
-                          <span className="text-gradient font-bold">
-                            data training
-                          </span>
-                          , photographers from{" "}
-                          <span className="text-gradient font-bold">
-                            all skill levels
-                          </span>{" "}
-                          will be able to record aerial footage within{" "}
-                          <span className="text-gradient font-bold">rough</span>{" "}
-                          or{" "}
-                          <span className="text-gradient font-bold">
-                            cramped
-                          </span>{" "}
-                          terrains. The LLM will be able to{" "}
-                          <span className="text-gradient font-bold">
-                            outline a path
-                          </span>{" "}
-                          and avoid{" "}
-                          <span className="text-gradient font-bold">
-                            obstacles
-                          </span>{" "}
-                          while maintaining{" "}
-                          <span className="text-gradient font-bold">
-                            optimal speeds
-                          </span>
-                          .
+                          Filler
                         </p>
                       </motion.div>
                     </div>

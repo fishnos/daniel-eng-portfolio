@@ -72,7 +72,7 @@ export default function About() {
         viewport={{ once: true }}
         className="h-auto w-full justify-center items-center flex flex-col gap-2"
       >
-        <span className="text-[40px] text-gradient font-extrabold mt-10">
+        <span className="text-[40px] text-gradient font-extrabold mt-10 text-glow-hover">
           My Skills
         </span>
         <motion.div className="w-full flex flex-col gap-1 justify-center items-center bg-secondary/10 border border-secondary/15 rounded-2xl backdrop-blur-xs py-2">
@@ -119,7 +119,7 @@ export default function About() {
         viewport={{ once: true }}
         className="h-auto w-full justify-center items-center flex flex-col gap-2"
       >
-        <span className="text-[40px] text-gradient font-extrabold mt-10">
+        <span className="text-[40px] text-gradient font-extrabold mt-10 text-glow-hover">
           My Expertise
         </span>
         <motion.div className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-secondary/10 border border-secondary/15 rounded-2xl">

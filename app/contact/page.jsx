@@ -45,9 +45,10 @@ export default function Contact() {
         >
           Get In Touch
         </motion.h1>
+        <div className="w-full flex flex-col justify-center items-center">
         <motion.form
           onSubmit={handleSubmit}
-          className="flex flex-col w-full gap-5 items-center"
+          className="flex flex-col w-full gap-5 items-center relative w-[95%]"
           initial={{ opacity: 0 }}
           whileInView={{
             delay: 0.1,
@@ -62,6 +63,7 @@ export default function Contact() {
             placeholder="First Name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
+            containerStyles="w-full"
           />
           <TextInput
             id="lastName"
@@ -69,6 +71,7 @@ export default function Contact() {
             placeholder="Last Name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
+            containerStyles="w-full"
           />
           <TextInput
             id="email"
@@ -76,9 +79,10 @@ export default function Contact() {
             placeholder="youremail@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            containerStyles="w-full"
           />
           <motion.div
-            className="flex flex-col w-full items-center mt-5"
+            className="flex flex-col w-full items-center mt-5 relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{
               opacity: 1,
@@ -94,7 +98,7 @@ export default function Contact() {
               id="message"
               rows={6}
               className="
-                mx-auto w-[400px] min-h-[160px]
+                mx-auto w-full min-h-[160px]
                 border border-secondary/25 rounded-2xl
                 bg-primary backdrop-blur-xs
                 py-2 px-2 resize-none
@@ -155,6 +159,7 @@ export default function Contact() {
             }
           </motion.button>
         </motion.form>
+        </div>
       </div>
     </AnimatePresence>
   );
