@@ -17,7 +17,7 @@ export default function NavBar() {
       <header className="flex translate-x-[5vw] justify-between items-center px-8 py-10 mt-5 h-[25px] w-[90vw] fixed top-0 z-50 backdrop-blur-sm border border-secondary/15 rounded-full">
         <h1 className="font-extrabold text-[22px]">
           <a href="/">
-            kosukhin.<span className="text-glow-hover text-gradient">tech</span>
+            kosukhin.<span className="text-glow-hover text-gradient">com</span>
           </a>
         </h1>
         <nav>

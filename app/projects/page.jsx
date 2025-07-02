@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import dronePhoto from "../../public/assets/images/drone-photo.jpg";
+import ehygPhoto from "../../public/assets/images/ehyg/ehyg-initial.png";
 import { IoIosArrowUp } from "react-icons/io";
 import { LuConstruction } from "react-icons/lu";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
@@ -234,7 +235,7 @@ export default function Projects() {
                     <span className="">Results</span>
                     <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li
@@ -321,9 +322,7 @@ export default function Projects() {
                         <h4 className="opacity-60 italic underline text-[18px] font-bold">
                           Issues
                         </h4>
-                        <p className="font-semibold">
-                          <span className="text-gradient font-bold">yap abt michael being boosted here</span>{" "}
-                        </p>
+                        <p className="font-semibold">Coming soon...</p>
                       </motion.div>
                     </div>
                     <div className="w-full flex justify-center">
@@ -342,9 +341,7 @@ export default function Projects() {
                         <h4 className="opacity-60 italic underline text-[18px] font-bold">
                           Solutions
                         </h4>
-                        <p className="font-semibold">
-                          Filler
-                        </p>
+                        <p className="font-semibold">Coming soon...</p>
                       </motion.div>
                     </div>
                   </div>
@@ -373,7 +370,7 @@ export default function Projects() {
                     <span className="">Results</span>
                     <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li
@@ -441,7 +438,7 @@ export default function Projects() {
               <div className="flex flex-col justify-center items-start w-full gap-5">
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left- mb-3">
-                    Goals
+                    What Is This?
                   </h3>
                   <div className="w-full flex flex-col gap-5 sm:flex-row sm:gap-0">
                     <div className="w-full flex justify-center">
@@ -458,31 +455,44 @@ export default function Projects() {
                         }}
                       >
                         <h4 className="opacity-60 italic underline text-[18px] font-bold">
-                          Issues
+                          EHYG Background
                         </h4>
                         <p className="font-semibold">
-                          Filler
-                        </p>
-                      </motion.div>
-                    </div>
-                    <div className="w-full flex justify-center">
-                      <motion.div
-                        className="relative w-[90%] border border-secondary/10 border-[2px] rounded-2xl p-2"
-                        initial={{ borderColor: "var(--color-quaternary)" }}
-                        whileHover={{
-                          borderColor: "var(--color-quaternary-hover)",
-                          transition: {
-                            delay: 0.05,
-                            duration: 0.25,
-                            ease: "easeInOut",
-                          },
-                        }}
-                      >
-                        <h4 className="opacity-60 italic underline text-[18px] font-bold">
-                          Solutions
-                        </h4>
-                        <p className="font-semibold">
-                          Filler
+                          The Eunhae Youth Group is a{" "}
+                          <span className="text-gradient font-bold">
+                            welcoming community
+                          </span>{" "}
+                          that provides a{" "}
+                          <span className="text-gradient font-bold">safe</span>{" "}
+                          and{" "}
+                          <span className="text-gradient font-bold">
+                            supportive
+                          </span>{" "}
+                          environment for young people to{" "}
+                          <span className="text-gradient font-bold">learn</span>{" "}
+                          and{" "}
+                          <span className="text-gradient font-bold">grow</span>{" "}
+                          in church. The youth group lacked a{" "}
+                          <span className="text-gradient font-bold">
+                            website
+                          </span>
+                          , so{" "}
+                          <span className="text-gradient font-bold">
+                            my team
+                          </span>{" "}
+                          and I constructed a{" "}
+                          <span className="text-gradient font-bold">
+                            responsive
+                          </span>{" "}
+                          and{" "}
+                          <span className="text-gradient font-bold">
+                            user-friendly
+                          </span>{" "}
+                          website for young scholars interested in{" "}
+                          <span className="text-gradient font-bold">
+                            Christianity
+                          </span>
+                          .
                         </p>
                       </motion.div>
                     </div>
@@ -491,28 +501,37 @@ export default function Projects() {
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
                     <span className="">Progress</span>
-                    <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
-                    <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
-                    >
-                      {[...footerTicker, ...footerTicker].map((item, index) => (
-                        <li
-                          className="items-center flex gap-4 flex-shrink-0"
-                          key={index}
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    <hr className="w-full border border-secondary/20 opacity-50 mt" />
                   </h3>
+                  <div className="w-full flex justify-center items-center flex flex-col gap-5">
+                    <Image
+                      className="relative w-[100%] h-auto mt-5 border border-secondary/15 border-[5px] rounded-2xl"
+                      src={ehygPhoto}
+                      alt="ehyg-photo"
+                    />
+                    <div className="w-full p-3 border border-secondary/10 rounded-2xl">
+                      <h4 className="opacity-60 text-secondary text-glow text-[20px] font-bold">
+                        June 22, 2025
+                      </h4>
+                      <p className="font-semibold text-[18px]">
+                        Added the{" "}
+                        <span className="text-gradient font-bold">initial</span>{" "}
+                        page and implemented basic{" "}
+                        <span className="text-gradient font-bold">styling</span>{" "}
+                        and{" "}
+                        <span className="text-gradient font-bold">
+                          animations
+                        </span>
+                        .{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
                     <span className="">Results</span>
                     <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
                     <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
                     >
                       {[...footerTicker, ...footerTicker].map((item, index) => (
                         <li

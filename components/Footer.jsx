@@ -6,21 +6,21 @@ import { SparklesIcon } from '@heroicons/react/24/outline'
 
 export default function Footer() {
   const footerTicker = [
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.tech</span>,
+    <span className="font-semibold">kosukhin.com</span>,
     <SparklesIcon className="text-secondary w-6 h-6"/>,
   ];
 
