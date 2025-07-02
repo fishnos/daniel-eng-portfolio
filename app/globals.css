@@ -21,6 +21,9 @@
 
   /*fonts*/
   --font-primary: "JetBrains Mono";
+
+  /*blur*/
+  --blur-2xs: 2px;
 }
 
 html {
