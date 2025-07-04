@@ -83,30 +83,36 @@ export default function HomePage() {
                     onHoverStart={() => setIsHoveredAboutMe(true)}
                     onHoverEnd={() => setIsHoveredAboutMe(false)}
                     initial={{
-                      borderColor: "var(--color-quaternary)"
+                      borderColor: "var(--color-quaternary)",
                     }}
                     animate={{
-                      borderColor: isHoveredAboutMe ? "var(--color-quaternary-hover)" : "var(--color-quaternary)"
+                      borderColor: isHoveredAboutMe
+                        ? "var(--color-quaternary-hover)"
+                        : "var(--color-quaternary)",
                     }}
                     transition={{
                       duration: 0.25,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                     className="w-auto px-6 py-2 bg-transparent border backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center gap-2"
                   >
                     About me
                     <motion.div
-                      initial={{x: 0}}
+                      initial={{ x: 0 }}
                       animate={{
-                        x: isHoveredAboutMe ? 5 : 0
+                        x: isHoveredAboutMe ? 5 : 0,
                       }}
                       transition={{
                         delay: 0.1,
                         duration: 0.3,
-                        ease: "circInOut"
+                        ease: "circInOut",
                       }}
                     >
-                      <FaArrowRight size={15} color="var(--color-secondary)" className="ml-1" />
+                      <FaArrowRight
+                        size={15}
+                        color="var(--color-secondary)"
+                        className="ml-1"
+                      />
                     </motion.div>
                   </motion.a>
                   <motion.a
@@ -114,30 +120,36 @@ export default function HomePage() {
                     onHoverStart={() => setIsHoveredGIT(true)}
                     onHoverEnd={() => setIsHoveredGIT(false)}
                     initial={{
-                      borderColor: "var(--color-quaternary)"
+                      borderColor: "var(--color-quaternary)",
                     }}
                     animate={{
-                      borderColor: isHoveredGIT ? "var(--color-quaternary-hover)" : "var(--color-quaternary)"
+                      borderColor: isHoveredGIT
+                        ? "var(--color-quaternary-hover)"
+                        : "var(--color-quaternary)",
                     }}
                     transition={{
                       duration: 0.25,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                     className="w-auto px-6 py-2 bg-transparent border backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center gap-2"
                   >
                     Get In Touch
                     <motion.div
-                      initial={{x: 0}}
+                      initial={{ x: 0 }}
                       animate={{
-                        x: isHoveredGIT ? 5 : 0
+                        x: isHoveredGIT ? 5 : 0,
                       }}
                       transition={{
                         delay: 0.1,
                         duration: 0.3,
-                        ease: "circInOut"
+                        ease: "circInOut",
                       }}
                     >
-                      <FaLinkedin size={20} color="var(--color-secondary)" className="ml-1" />
+                      <FaLinkedin
+                        size={20}
+                        color="var(--color-secondary)"
+                        className="ml-1"
+                      />
                     </motion.div>
                   </motion.a>
                 </div>

@@ -69,24 +69,16 @@ export default function Projects() {
             WPILib Automation
           </span>
           <div className="flex flex-wrap items-start justify-center gap-2">
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Vision
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Pathplanning
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               PID
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Java
             </div>
           </div>
@@ -230,19 +222,13 @@ export default function Projects() {
             Eunhae Youth Group Website
           </span>
           <div className="flex flex-wrap items-start justify-center gap-2">
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Community
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Front-end
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Volunteering
             </div>
           </div>
@@ -411,19 +397,13 @@ export default function Projects() {
             Photographical Drone Computing System
           </span>
           <div className="flex flex-wrap items-start justify-center gap-2">
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               AI
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               LIDAR
             </div>
-            <div
-              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
-            >
+            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
               Cinematography
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { FaSpotify } from "react-icons/fa";
-import { SparklesIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon } from "@heroicons/react/24/outline";
 
 export default function Footer() {
   const tickerWords = [
@@ -94,7 +94,11 @@ export default function Footer() {
                 className="flex flex-row justify-start items-center whitespace-nowrap hover:underline text-glow-hover"
               >
                 Spotify
-                <FaSpotify color="var(--color-secondary)" size={20} className="ml-2" />
+                <FaSpotify
+                  color="var(--color-secondary)"
+                  size={20}
+                  className="ml-2"
+                />
               </a>
             </motion.div>
             {/*navigation*/}
@@ -159,18 +163,18 @@ export default function Footer() {
           className="w-full h-auto items-center overflow-hidden 
                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_90%,transparent)]"
         >
-          <hr className="relative w-full border border-secondary/20 opacity-50 mt-10"/>
+          <hr className="relative w-full border border-secondary/20 opacity-50 mt-10" />
           <ul
             className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_25s_linear_infinite_reverse]`}
           >
             {[...tickerWords, ...tickerWords].map((word, index) => (
               <li className="items-center flex gap-4 flex-shrink-0" key={index}>
                 <span className="font-semibold text-glow">{word}</span>
-                <SparklesIcon className="text-secondary w-6 h-6"/>
+                <SparklesIcon className="text-secondary w-6 h-6" />
               </li>
             ))}
           </ul>
-          <hr className="relative w-full border border-secondary/20 opacity-50"/>
+          <hr className="relative w-full border border-secondary/20 opacity-50" />
         </motion.div>
       </AnimatePresence>
     </footer>

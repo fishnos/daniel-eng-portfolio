@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -30,37 +30,35 @@ export default function CustomCursor() {
       if (!e.relatedTarget && !e.toElement) {
         setIsOutOfFrame(true);
       }
-    }
+    };
 
-    window.addEventListener('mousemove', updateCursorPosition);
-    window.addEventListener('mousedown', handleMouseDown);
-    window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener("mousemove", updateCursorPosition);
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mouseup", handleMouseUp);
 
-    document.addEventListener('mouseout', handleMouseOut);
-    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener("mouseout", handleMouseOut);
+    document.addEventListener("mouseover", handleMouseOver);
 
     return () => {
-      window.removeEventListener('mousemove', updateCursorPosition);
-      window.removeEventListener('mousedown', handleMouseDown);
-      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener("mousemove", updateCursorPosition);
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mouseup", handleMouseUp);
 
-      document.removeEventListener('mouseout', handleMouseOut);
-      document.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener("mouseout", handleMouseOut);
+      document.removeEventListener("mouseover", handleMouseOver);
     };
   }, []);
 
   return (
     <div
       className={`cursor 
-        ${isHovered ? 'hover' : ''} 
-        ${isDisabled ? 'disabled' : ''} 
-        ${isOutOfFrame ? 'outOfFrame' : ''}`
-      }
+        ${isHovered ? "hover" : ""} 
+        ${isDisabled ? "disabled" : ""} 
+        ${isOutOfFrame ? "outOfFrame" : ""}`}
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
       }}
     />
   );
-} 
-
+}

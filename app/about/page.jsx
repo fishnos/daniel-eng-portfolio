@@ -77,7 +77,9 @@ export default function About() {
         </span>
         <motion.div className="w-full flex flex-col gap-1 justify-center items-center bg-secondary/10 border border-secondary/15 rounded-2xl backdrop-blur-xs py-2">
           {/*frontend*/}
-          <h3 className="mt-5 font-bold text-[22px] text-glow">Front-end Experience</h3>
+          <h3 className="mt-5 font-bold text-[22px] text-glow">
+            Front-end Experience
+          </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             Using a multitude of languages in my toolkit, I develop captivating
             and engaging designs focused on user-friendliness.
@@ -86,7 +88,9 @@ export default function About() {
           <Ticker tickerType={"frontend"} tickerDuration={"20"} />
           <hr className="relative w-[75%] border border-secondary/20 opacity-50" />
           {/*backend*/}
-          <h3 className="mt-8  font-bold text-[22px] text-glow">Back-end Experience</h3>
+          <h3 className="mt-8  font-bold text-[22px] text-glow">
+            Back-end Experience
+          </h3>
           <p className="relative w-[80%] flex justify-center items-center font-semibold text-[14px]">
             I have recently begun to dive into backend to find innovative
             alternatives, such as my contacts page.
@@ -137,112 +141,112 @@ export default function About() {
         viewport={{ once: true }}
         className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start backdrop-blur-xs bg-secondary/10 border border-secondary/15 rounded-2xl"
       >
-          {/*programming lead*/}
-          <h4 className="font-bold text-[25px] text-glow">Programming Lead, 2638</h4>
-          <ul className="list-disc list-inside pl-1 space-y-1">
-            <li>
-              Program in <span className="text-gradient font-bold ">Java</span>{" "}
-              and <span className="text-gradient font-bold ">WPILib</span> to
-              develop various path-planning systems
-            </li>
-            <li>
-              Spearheaded the integration of{" "}
-              <span className="text-gradient font-bold ">Choreo</span> and{" "}
-              <span className="text-gradient font-bold ">Pathplanner</span> to
-              draw out autonomous pathways
-            </li>
-            <li>
-              Directed the{" "}
-              <span className="text-gradient font-bold ">
-                electrical wiring
-              </span>{" "}
-              and <span className="text-gradient font-bold ">programming</span>{" "}
-              of our off-season robot
-            </li>
-          </ul>
-          {/*sound chief*/}
-          <h4 className="font-bold text-[25px] mt-6 text-glow">
-            Sound Chief and Manager
-          </h4>
-          <ul className="list-disc list-inside pl-1 space-y-1">
-            <li>
-              Utilized the{" "}
-              <span className="text-gradient font-bold ">Midas M32</span> for
-              unmatched efficiency and simplistic sound control
-            </li>
-            <li>
-              Established the wiring of{" "}
-              <span className="text-gradient font-bold ">microphones</span>,{" "}
-              <span className="text-gradient font-bold ">recievers</span>, and{" "}
-              <span className="text-gradient font-bold ">transmitters</span>{" "}
-              throughout the theater
-            </li>
-            <li>
-              Orchestrated{" "}
-              <span className="text-gradient font-bold  italic">
-                Cultural Heritage Night
-              </span>{" "}
-              and <span className="text-gradient font-bold ">programming</span>,{" "}
-              <span className="text-gradient font-bold  italic">
-                Legally Blonde
-              </span>
-              , and the{" "}
-              <span className="text-gradient font-bold  italic">One Acts</span>{" "}
-              at Theater South
-            </li>
-          </ul>
-          {/*programming club board*/}
-          <h4 className="font-bold text-[25px] mt-6 text-glow">
-            Board of the Programming Club
-          </h4>
-          <ul className="list-disc list-inside pl-1 space-y-1">
-            <li>
-              Present various{" "}
-              <span className="text-gradient font-bold">meetings</span> about
-              ACSL or USACO
-            </li>
-            <li>
-              Tutor the basics of{" "}
-              <span className="text-gradient font-bold ">
-                competitive programming
-              </span>{" "}
-              and <span className="text-gradient font-bold ">C++</span>
-            </li>
-          </ul>
-          {/*local web developer*/}
-          <h4 className="font-bold text-[25px] mt-6 text-glow">
-            Local website developer
-          </h4>
-          <ul className="list-disc list-inside pl-1 space-y-1">
-            <li>
-              Constructed the{" "}
-              <span className="text-gradient font-bold  italic">
-                Eunhae Youth Group Website
-              </span>{" "}
-              website for the local Eunhae church
-              <a
-                className="ml-[10px] inline-flex shrink-0"
-                href="https://ehyg.vercel.app/"
-                aria-label="View Project"
-              >
-                <FaExternalLinkAlt color="var(--color-secondary)" size={15} />
-              </a>
-            </li>
-            <li>
-              Currently developing the{" "}
-              <span className="text-gradient font-bold italic">
-                GNS Web Dev Club Website
-              </span>
-              <a
-                className="ml-[10px] inline-flex shrink-0"
-                href="https://gnswebdev.vercel.app/"
-                aria-label="View Project"
-              >
-                <FaExternalLinkAlt color="var(--color-secondary)" size={15} />
-              </a>
-            </li>
-          </ul>
-        </motion.div>
+        {/*programming lead*/}
+        <h4 className="font-bold text-[25px] text-glow">
+          Programming Lead, 2638
+        </h4>
+        <ul className="list-disc list-inside pl-1 space-y-1">
+          <li>
+            Program in <span className="text-gradient font-bold ">Java</span>{" "}
+            and <span className="text-gradient font-bold ">WPILib</span> to
+            develop various path-planning systems
+          </li>
+          <li>
+            Spearheaded the integration of{" "}
+            <span className="text-gradient font-bold ">Choreo</span> and{" "}
+            <span className="text-gradient font-bold ">Pathplanner</span> to
+            draw out autonomous pathways
+          </li>
+          <li>
+            Directed the{" "}
+            <span className="text-gradient font-bold ">electrical wiring</span>{" "}
+            and <span className="text-gradient font-bold ">programming</span> of
+            our off-season robot
+          </li>
+        </ul>
+        {/*sound chief*/}
+        <h4 className="font-bold text-[25px] mt-6 text-glow">
+          Sound Chief and Manager
+        </h4>
+        <ul className="list-disc list-inside pl-1 space-y-1">
+          <li>
+            Utilized the{" "}
+            <span className="text-gradient font-bold ">Midas M32</span> for
+            unmatched efficiency and simplistic sound control
+          </li>
+          <li>
+            Established the wiring of{" "}
+            <span className="text-gradient font-bold ">microphones</span>,{" "}
+            <span className="text-gradient font-bold ">recievers</span>, and{" "}
+            <span className="text-gradient font-bold ">transmitters</span>{" "}
+            throughout the theater
+          </li>
+          <li>
+            Orchestrated{" "}
+            <span className="text-gradient font-bold  italic">
+              Cultural Heritage Night
+            </span>{" "}
+            and <span className="text-gradient font-bold ">programming</span>,{" "}
+            <span className="text-gradient font-bold  italic">
+              Legally Blonde
+            </span>
+            , and the{" "}
+            <span className="text-gradient font-bold  italic">One Acts</span> at
+            Theater South
+          </li>
+        </ul>
+        {/*programming club board*/}
+        <h4 className="font-bold text-[25px] mt-6 text-glow">
+          Board of the Programming Club
+        </h4>
+        <ul className="list-disc list-inside pl-1 space-y-1">
+          <li>
+            Present various{" "}
+            <span className="text-gradient font-bold">meetings</span> about ACSL
+            or USACO
+          </li>
+          <li>
+            Tutor the basics of{" "}
+            <span className="text-gradient font-bold ">
+              competitive programming
+            </span>{" "}
+            and <span className="text-gradient font-bold ">C++</span>
+          </li>
+        </ul>
+        {/*local web developer*/}
+        <h4 className="font-bold text-[25px] mt-6 text-glow">
+          Local website developer
+        </h4>
+        <ul className="list-disc list-inside pl-1 space-y-1">
+          <li>
+            Constructed the{" "}
+            <span className="text-gradient font-bold  italic">
+              Eunhae Youth Group Website
+            </span>{" "}
+            website for the local Eunhae church
+            <a
+              className="ml-[10px] inline-flex shrink-0"
+              href="https://ehyg.vercel.app/"
+              aria-label="View Project"
+            >
+              <FaExternalLinkAlt color="var(--color-secondary)" size={15} />
+            </a>
+          </li>
+          <li>
+            Currently developing the{" "}
+            <span className="text-gradient font-bold italic">
+              GNS Web Dev Club Website
+            </span>
+            <a
+              className="ml-[10px] inline-flex shrink-0"
+              href="https://gnswebdev.vercel.app/"
+              aria-label="View Project"
+            >
+              <FaExternalLinkAlt color="var(--color-secondary)" size={15} />
+            </a>
+          </li>
+        </ul>
+      </motion.div>
     </div>
   );
 }

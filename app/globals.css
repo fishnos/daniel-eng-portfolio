@@ -17,7 +17,12 @@
   --color-tertiary: #8fe0f1; /* sky cyan */
   --color-tertiary-hover: #c5e5ec; /* light sky cyan */
   --color-quaternary: rgba(236, 243, 244, 0.15); /* low-opacity secondary */
-  --color-quaternary-hover: rgba(236, 243, 244, 0.35); /* high-opacity secondary */
+  --color-quaternary-hover: rgba(
+    236,
+    243,
+    244,
+    0.35
+  ); /* high-opacity secondary */
 
   /*fonts*/
   --font-primary: "JetBrains Mono";
@@ -100,10 +105,8 @@ body {
   transition: transform 0.35s ease;
   pointer-events: none;
   z-index: 9999;
-  box-shadow: 
-    0 0 8px rgba(255, 255, 255, 0.2),
-    0 0 16px rgba(255, 255, 255, 0.2),
-    0 0 24px rgba(255, 255, 255, 0.3),
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2),
+    0 0 16px rgba(255, 255, 255, 0.2), 0 0 24px rgba(255, 255, 255, 0.3),
     0 0 32px rgba(255, 255, 255, 0.4);
 }
 
@@ -121,7 +124,11 @@ body {
 
 .text-gradient {
   background: #7997f2;
-  background: radial-gradient(circle, rgba(121, 151, 242, 1) 39%, rgba(121, 133, 242, 1) 69%);
+  background: radial-gradient(
+    circle,
+    rgba(121, 151, 242, 1) 39%,
+    rgba(121, 133, 242, 1) 69%
+  );
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -135,17 +142,14 @@ body {
 }
 
 .text-glow-hover:hover {
-  text-shadow:
-    0 0 8px rgba(185, 255, 255, 0.3),
+  text-shadow: 0 0 8px rgba(185, 255, 255, 0.3),
     0 0 16px rgba(185, 255, 255, 0.2);
 }
 
 .text-glow {
   color: #a0bfff; /* soft blue */
-  text-shadow: 
-    0 0 4px rgba(160, 191, 255, 0.4),
-    0 0 8px rgba(160, 191, 255, 0.2),
-    0 0 12px rgba(160, 191, 255, 0.15);
+  text-shadow: 0 0 4px rgba(160, 191, 255, 0.4),
+    0 0 8px rgba(160, 191, 255, 0.2), 0 0 12px rgba(160, 191, 255, 0.15);
 }
 
 @keyframes animate-gradient {
