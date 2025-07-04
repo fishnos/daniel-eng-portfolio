@@ -32,14 +32,33 @@ export default function Ticker({ tickerType, tickerDuration }) {
   const tickerTypes = {
     //frontend
     frontend: [
-      <TickerIcon iconName={"/assets/icons/icons8-javascript.svg"} iconText="Javascript" link="https://www.javascript.com/"/>
-      
+      <TickerIcon iconName={"/assets/icons/icons8-javascript.svg"} iconText="Javascript" link="https://www.javascript.com/"/>,
+      <TickerIcon iconName={"/assets/icons/typescript.svg"} iconText="Typescript" link="https://www.typescriptlang.org/"/>,
+      <TickerIcon iconName={"/assets/icons/react-2.svg"} iconText="React" link="https://react.dev/"/>,
+      <TickerIcon iconName={"/assets/icons/tailwind-css-2.svg"} iconText="Tailwind CSS" link="https://tailwindcss.com/"/>,
+      <TickerIcon iconName={"/assets/icons/css-3.svg"} iconText="CSS" link="https://developer.mozilla.org/en-US/docs/Web/CSS"/>,
+      <TickerIcon iconName={"/assets/icons/framer-motion.svg"} iconText="Framer Motion" link="https://motion.dev/"/>,
+      <TickerIcon iconName={"/assets/icons/next-js.svg"} iconText="Next.js" link="https://nextjs.org/"/>,
     ],
     //backend
     backend: [
+      <TickerIcon iconName={"/assets/icons/icons8-javascript.svg"} iconText="Javascript" link="https://www.javascript.com/"/>,
+      <TickerIcon iconName={"/assets/icons/typescript.svg"} iconText="Typescript" link="https://www.typescriptlang.org/"/>,
+      <TickerIcon iconName={"/assets/icons/react-2.svg"} iconText="React" link="https://react.dev/"/>,
+      <TickerIcon iconName={"/assets/icons/tailwind-css-2.svg"} iconText="Tailwind CSS" link="https://tailwindcss.com/"/>,
+      <TickerIcon iconName={"/assets/icons/css-3.svg"} iconText="CSS" link="https://developer.mozilla.org/en-US/docs/Web/CSS"/>,
+      <TickerIcon iconName={"/assets/icons/framer-motion.svg"} iconText="Framer Motion" link="https://motion.dev/"/>,
+      <TickerIcon iconName={"/assets/icons/next-js.svg"} iconText="Next.js" link="https://nextjs.org/"/>,
     ],
     //tools
     tools: [
+      <TickerIcon iconName={"/assets/icons/icons8-javascript.svg"} iconText="Javascript" link="https://www.javascript.com/"/>,
+      <TickerIcon iconName={"/assets/icons/typescript.svg"} iconText="Typescript" link="https://www.typescriptlang.org/"/>,
+      <TickerIcon iconName={"/assets/icons/react-2.svg"} iconText="React" link="https://react.dev/"/>,
+      <TickerIcon iconName={"/assets/icons/tailwind-css-2.svg"} iconText="Tailwind CSS" link="https://tailwindcss.com/"/>,
+      <TickerIcon iconName={"/assets/icons/css-3.svg"} iconText="CSS" link="https://developer.mozilla.org/en-US/docs/Web/CSS"/>,
+      <TickerIcon iconName={"/assets/icons/framer-motion.svg"} iconText="Framer Motion" link="https://motion.dev/"/>,
+      <TickerIcon iconName={"/assets/icons/next-js.svg"} iconText="Next.js" link="https://nextjs.org/"/>,
     ],
   };
   const items = tickerTypes[tickerType] || [];
