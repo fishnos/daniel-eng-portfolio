@@ -43,7 +43,7 @@ export default function NavBar() {
               ease: "easeOut",
             }}
             exit={{opacity: 0}}
-            className="md:hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-30"
+            className="md:hidden fixed inset-0 bg-black/30 backdrop-blur-xl z-30"
             key={isOpen}
           />
           <motion.nav 

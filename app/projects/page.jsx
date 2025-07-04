@@ -4,35 +4,28 @@ import React, { useState } from "react";
 import Image from "next/image";
 import dronePhoto from "../../public/assets/images/pdcs/drone-photo.jpg";
 import ehygPhoto from "../../public/assets/images/ehyg/ehyg-initial.png";
+import { isMobile } from "react-device-detect";
 import { IoIosArrowUp } from "react-icons/io";
 import { LuConstruction } from "react-icons/lu";
-import { AnimatePresence, motion, useScroll } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Projects() {
   const [isOpenPDCS, setIsOpenPDCS] = useState();
   const [isOpenWPILib, setIsOpenWPILib] = useState();
   const [isOpenEHYG, setIsOpenEHYG] = useState();
-  const { scrollYProgress } = useScroll();
 
-  const footerTicker = [
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
-    <span className="font-semibold">Coming soon!</span>,
-    <LuConstruction className="text-secondary w-6 h-6" />,
+  const tickerWords = [
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
+    "Coming soon!",
   ];
 
   return (
@@ -75,7 +68,7 @@ export default function Projects() {
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             WPILib Automation
           </span>
-          <div className="flex flex-row items-start justify-center gap-2">
+          <div className="flex flex-wrap items-start justify-center gap-2">
             <div
               className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
             >
@@ -176,12 +169,13 @@ export default function Projects() {
                     <ul
                       className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
                     >
-                      {[...footerTicker, ...footerTicker].map((item, index) => (
+                      {[...tickerWords, ...tickerWords].map((words, index) => (
                         <li
                           className="items-center flex gap-4 flex-shrink-0"
                           key={index}
                         >
-                          {item}
+                          <span className="font-semibold">{words}</span>
+                          <LuConstruction className="text-secondary w-6 h-6" />
                         </li>
                       ))}
                     </ul>
@@ -195,12 +189,13 @@ export default function Projects() {
                     <ul
                       className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
                     >
-                      {[...footerTicker, ...footerTicker].map((item, index) => (
+                      {[...tickerWords, ...tickerWords].map((words, index) => (
                         <li
                           className="items-center flex gap-4 flex-shrink-0"
                           key={index}
                         >
-                          {item}
+                          <span className="font-semibold">{words}</span>
+                          <LuConstruction className="text-secondary w-6 h-6" />
                         </li>
                       ))}
                     </ul>
@@ -234,7 +229,7 @@ export default function Projects() {
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             Eunhae Youth Group Website
           </span>
-          <div className="flex flex-row items-start justify-center gap-2">
+          <div className="flex flex-wrap items-start justify-center gap-2">
             <div
               className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
             >
@@ -375,12 +370,13 @@ export default function Projects() {
                     <ul
                       className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
                     >
-                      {[...footerTicker, ...footerTicker].map((item, index) => (
+                      {[...tickerWords, ...tickerWords].map((words, index) => (
                         <li
                           className="items-center flex gap-4 flex-shrink-0"
                           key={index}
                         >
-                          {item}
+                          <span className="font-semibold">{words}</span>
+                          <LuConstruction className="text-secondary w-6 h-6" />
                         </li>
                       ))}
                     </ul>
@@ -414,7 +410,7 @@ export default function Projects() {
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             Photographical Drone Computing System
           </span>
-          <div className="flex flex-row items-start justify-center gap-2">
+          <div className="flex flex-wrap items-start justify-center gap-2">
             <div
               className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
             >
@@ -576,12 +572,13 @@ export default function Projects() {
                     <ul
                       className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
                     >
-                      {[...footerTicker, ...footerTicker].map((item, index) => (
+                      {[...tickerWords, ...tickerWords].map((words, index) => (
                         <li
                           className="items-center flex gap-4 flex-shrink-0"
                           key={index}
                         >
-                          {item}
+                          <span className="font-semibold">{words}</span>
+                          <LuConstruction className="text-secondary w-6 h-6" />
                         </li>
                       ))}
                     </ul>
@@ -595,12 +592,13 @@ export default function Projects() {
                     <ul
                       className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
                     >
-                      {[...footerTicker, ...footerTicker].map((item, index) => (
+                      {[...tickerWords, ...tickerWords].map((words, index) => (
                         <li
                           className="items-center flex gap-4 flex-shrink-0"
                           key={index}
                         >
-                          {item}
+                          <span className="font-semibold">{words}</span>
+                          <LuConstruction className="text-secondary w-6 h-6" />
                         </li>
                       ))}
                     </ul>

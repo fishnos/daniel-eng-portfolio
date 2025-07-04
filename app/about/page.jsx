@@ -4,7 +4,6 @@ import React from "react";
 import idPhoto from "../../public/assets/profile/id-photo.png";
 import labPhoto from "../../public/assets/profile/lab-photo.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { isMobile } from "react-device-detect";
 import Ticker from "../../components/Ticker";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -123,7 +122,21 @@ export default function About() {
         <span className="text-[40px] text-gradient font-extrabold mt-10 text-glow-hover">
           My Expertise
         </span>
-        <motion.div className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start bg-secondary/10 border border-secondary/15 rounded-2xl">
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.15,
+            duration: 0.45,
+            ease: "circInOut",
+          },
+        }}
+        viewport={{ once: true }}
+        className="w-full flex flex-col px-8 py-4 gap-1 justify-center items-start backdrop-blur-xs bg-secondary/10 border border-secondary/15 rounded-2xl"
+      >
           {/*programming lead*/}
           <h4 className="font-bold text-[25px] text-glow">Programming Lead, 2638</h4>
           <ul className="list-disc list-inside pl-1 space-y-1">
@@ -230,7 +243,6 @@ export default function About() {
             </li>
           </ul>
         </motion.div>
-      </motion.h2>
     </div>
   );
 }
