@@ -5,23 +5,17 @@ import { FaSpotify } from "react-icons/fa";
 import { SparklesIcon } from '@heroicons/react/24/outline'
 
 export default function Footer() {
-  const footerTicker = [
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
-    <span className="font-semibold">kosukhin.com</span>,
-    <SparklesIcon className="text-secondary w-6 h-6"/>,
+  const tickerWords = [
+    "extravagent",
+    "shining",
+    "sparkly",
+    "appealing",
+    "engaging",
+    "enticing",
+    "beautiful",
+    "creative",
+    "user-friendly",
+    "flashy",
   ];
 
   return (
@@ -167,11 +161,12 @@ export default function Footer() {
         >
           <hr className="relative w-full border border-secondary/20 opacity-50 mt-10"/>
           <ul
-            className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
+            className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_25s_linear_infinite_reverse]`}
           >
-            {[...footerTicker, ...footerTicker].map((item, index) => (
+            {[...tickerWords, ...tickerWords].map((word, index) => (
               <li className="items-center flex gap-4 flex-shrink-0" key={index}>
-                {item}
+                <span className="font-semibold text-glow">{word}</span>
+                <SparklesIcon className="text-secondary w-6 h-6"/>
               </li>
             ))}
           </ul>

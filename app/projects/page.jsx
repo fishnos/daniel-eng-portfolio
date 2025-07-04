@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import dronePhoto from "../../public/assets/images/drone-photo.jpg";
+import dronePhoto from "../../public/assets/images/pdcs/drone-photo.jpg";
 import ehygPhoto from "../../public/assets/images/ehyg/ehyg-initial.png";
 import { IoIosArrowUp } from "react-icons/io";
 import { LuConstruction } from "react-icons/lu";
@@ -80,6 +80,21 @@ export default function Projects() {
               className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
             >
               Vision
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              Pathplanning
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              PID
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              Java
             </div>
           </div>
           <span className="opacity-60 text-secondary text-[20px] font-bold italic">
@@ -224,6 +239,16 @@ export default function Projects() {
               className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
             >
               Community
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              Front-end
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              Volunteering
             </div>
           </div>
           <span className="opacity-60 text-secondary text-[20px] font-bold italic">
@@ -394,6 +419,16 @@ export default function Projects() {
               className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
             >
               AI
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              LIDAR
+            </div>
+            <div
+              className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2"
+            >
+              Cinematography
             </div>
           </div>
           <span className="opacity-60 text-secondary text-[20px] font-bold italic">

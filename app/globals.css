@@ -10,7 +10,7 @@
   --breakpoint-2xl: 1520;
 
   /* colors */
-  --color-primary: #0c161b; /* navy blue */
+  --color-primary: #141616; /* blueish black */
   --color-secondary: #ecf3f4; /* creamy white */
   --color-accent: #cbeff0; /* sea blue */
   --color-accent-hover: #d8ebeb; /* light sea blue */
@@ -120,9 +120,8 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, 
-    #d8ebeb, #c3f0f0, #b0f4f4, #a1efef, #8cecec, #a1efef, #b0f4f4, #c3f0f0
-  );
+  background: #7997f2;
+  background: radial-gradient(circle, rgba(121, 151, 242, 1) 39%, rgba(121, 133, 242, 1) 69%);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -142,9 +141,11 @@ body {
 }
 
 .text-glow {
-  text-shadow:
-    0 0 8px rgba(185, 255, 255, 0.3),
-    0 0 16px rgba(185, 255, 255, 0.2);
+  color: #a0bfff; /* Softer blue */
+  text-shadow: 
+    0 0 4px rgba(160, 191, 255, 0.4),
+    0 0 8px rgba(160, 191, 255, 0.2),
+    0 0 12px rgba(160, 191, 255, 0.15);
 }
 
 @keyframes animate-gradient {

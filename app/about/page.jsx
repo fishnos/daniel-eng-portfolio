@@ -2,6 +2,7 @@
 
 import React from "react";
 import idPhoto from "../../public/assets/profile/id-photo.png";
+import labPhoto from "../../public/assets/profile/lab-photo.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { isMobile } from "react-device-detect";
 import Ticker from "../../components/Ticker";
@@ -27,12 +28,12 @@ export default function About() {
           className="h-auto w-full justify-center items-center flex flex-col md:flex-row gap-10"
         >
           <Image
-            src={idPhoto}
+            src={labPhoto}
             alt="daniel-photo"
             width={250}
             height={250}
             priority
-            className="border border-secondary/15 border-[4px] rounded-full"
+            className="border border-secondary/15 border-[4px] rounded-[60px]"
           />
           <motion.div
             className="w-full ml-4 md:ml-0"

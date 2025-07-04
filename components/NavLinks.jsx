@@ -40,7 +40,7 @@ export default function NavLinks({ containerStyles }) {
           >
             <span
               className={`relative z-10 text-glow-hover ${
-                isActive ? "text-tertiary" : "text-secondary opacity-85"
+                isActive ? "text-gradient" : "text-secondary opacity-85"
               }`}
             >
               {fileLink.page}
