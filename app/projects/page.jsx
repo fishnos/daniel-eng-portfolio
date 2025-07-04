@@ -28,6 +28,10 @@ export default function Projects() {
     "Coming soon!",
   ];
 
+  const pdcsTags = ["AI", "LiDAR", "Cinematography"];
+  const ehygTags = ["Community", "Front-end", "Volunteering"];
+  const wpilibTags = ["Vision", "Pathplanning", "PID", "Java"];
+
   return (
     <div className="w-full flex flex-col justify-center items-center gap-5">
       <motion.h1
@@ -60,27 +64,21 @@ export default function Projects() {
           },
         }}
         viewport={{ once: true }}
+        id="wpilib-automation"
       >
-        <h2
-          className="w-full flex flex-col justify-center items-start"
-          id="pdcs-projects"
-        >
+        <h2 className="w-full flex flex-col justify-center items-start">
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             WPILib Automation
           </span>
-          <div className="flex flex-wrap items-start justify-center gap-2">
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Vision
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Pathplanning
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              PID
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Java
-            </div>
+          <div className="flex flex-wrap justify-center gap-2">
+            {wpilibTags.map((tag, index) => (
+              <div
+                className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[12px] sm:text-[15px] mt-2 mb-2"
+                key={index}
+              >
+                {tag}
+              </div>
+            ))}
           </div>
           <span className="opacity-60 text-secondary text-[20px] font-bold italic">
             (Nov. 2024-PRESENT)
@@ -213,23 +211,22 @@ export default function Projects() {
           },
         }}
         viewport={{ once: true }}
+        id="ehyg-web"
       >
-        <h2
-          className="w-full flex flex-col justify-center items-start"
-          id="pdcs-projects"
-        >
+        <h2 className="w-full flex flex-col justify-center items-start">
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             Eunhae Youth Group Website
           </span>
           <div className="flex flex-wrap items-start justify-center gap-2">
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Community
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Front-end
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Volunteering
+            <div className="flex flex-wrap justify-center gap-2">
+              {ehygTags.map((tag, index) => (
+                <div
+                  className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[12px] sm:text-[15px] mt-2 mb-2"
+                  key={index}
+                >
+                  {tag}
+                </div>
+              ))}
             </div>
           </div>
           <span className="opacity-60 text-secondary text-[20px] font-bold italic">
@@ -388,23 +385,22 @@ export default function Projects() {
           },
         }}
         viewport={{ once: true }}
+        id="pdcs-projects"
       >
-        <h2
-          className="w-full flex flex-col justify-center items-start"
-          id="pdcs-projects"
-        >
+        <h2 className="w-full flex flex-col justify-center items-start">
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             Photographical Drone Computing System
           </span>
-          <div className="flex flex-wrap items-start justify-center gap-2">
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              AI
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              LIDAR
-            </div>
-            <div className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[15px] mt-2 mb-2">
-              Cinematography
+          <div className="flex flex-wrap justify-center gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
+              {pdcsTags.map((tag, index) => (
+                <div
+                  className="w-auto px-3 py-1 bg-transparent border border-secondary/15 backdrop-blur-xs text-secondary rounded-md font-medium transition flex items-center justify-center text-[12px] sm:text-[15px] mt-2 mb-2"
+                  key={index}
+                >
+                  {tag}
+                </div>
+              ))}
             </div>
           </div>
           <span className="opacity-60 text-secondary text-[20px] font-bold italic">
