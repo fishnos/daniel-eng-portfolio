@@ -79,7 +79,7 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   {/*TODO: stylize these buttons and fix the small screen overlap bug*/}
                   <motion.a
-                    onClick={handleLinkedInClickEvent}
+                    href="/about"
                     onHoverStart={() => setIsHoveredAboutMe(true)}
                     onHoverEnd={() => setIsHoveredAboutMe(false)}
                     initial={{

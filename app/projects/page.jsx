@@ -66,7 +66,11 @@ export default function Projects() {
         viewport={{ once: true }}
         id="wpilib-automation"
       >
-        <h2 className="w-full flex flex-col justify-center items-start">
+        <h2
+          className={`w-full flex flex-col justify-center ${
+            isMobile ? `items-center` : `items-start`
+          }`}
+        >
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             WPILib Automation
           </span>
@@ -109,7 +113,7 @@ export default function Projects() {
               <div className="flex flex-col justify-center items-start w-full gap-5">
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left- mb-3">
-                    Goals
+                    Game Plan
                   </h3>
                   <div className="w-full flex flex-col gap-5 sm:flex-row sm:gap-0">
                     <div className="w-full flex justify-center">
@@ -128,7 +132,33 @@ export default function Projects() {
                         <h4 className="opacity-60 italic underline text-[18px] font-bold">
                           Issues
                         </h4>
-                        <p className="font-semibold">Coming soon...</p>
+                        <p className="font-semibold">
+                          Throughout{" "}
+                          <span className="text-gradient font-bold">
+                            First Robotics
+                          </span>
+                          , precision is key for{" "}
+                          <span className="text-gradient font-bold">
+                            optimal
+                          </span>{" "}
+                          scoring and{" "}
+                          <span className="text-gradient font-bold">
+                            efficiency
+                          </span>
+                          . Drawing a{" "}
+                          <span className="text-gradient font-bold">
+                            mental path
+                          </span>{" "}
+                          on the robot field that prioritizes{" "}
+                          <span className="text-gradient font-bold">
+                            performance
+                          </span>{" "}
+                          takes years of practice, and a{" "}
+                          <span className="text-gradient font-bold">
+                            limited
+                          </span>{" "}
+                          number of drivers can do so.
+                        </p>
                       </motion.div>
                     </div>
                     <div className="w-full flex justify-center">
@@ -147,7 +177,51 @@ export default function Projects() {
                         <h4 className="opacity-60 italic underline text-[18px] font-bold">
                           Solutions
                         </h4>
-                        <p className="font-semibold">Coming soon...</p>
+                        <p className="font-semibold">
+                          To bridge the{" "}
+                          <span className="text-gradient font-bold">
+                            skill gap
+                          </span>
+                          , I created an{" "}
+                          <span className="text-gradient font-bold">
+                            algorithm
+                          </span>{" "}
+                          that uses{" "}
+                          <span className="text-gradient font-bold">PID</span>{" "}
+                          controllers and{" "}
+                          <span className="text-gradient font-bold">
+                            trigonometry
+                          </span>{" "}
+                          to{" "}
+                          <span className="text-gradient font-bold">
+                            navigate
+                          </span>{" "}
+                          the field and reduce{" "}
+                          <span className="text-gradient font-bold">
+                            driver error
+                          </span>
+                          . The algorithm waits on{" "}
+                          <span className="text-gradient font-bold">
+                            user-based
+                          </span>{" "}
+                          input for{" "}
+                          <span className="text-gradient font-bold">
+                            pose-based
+                          </span>{" "}
+                          pathplanning. For{" "}
+                          <span className="text-gradient font-bold">
+                            drift reduction
+                          </span>
+                          , our team used a{" "}
+                          <span className="text-gradient font-bold">
+                            Limelight
+                          </span>{" "}
+                          and created a{" "}
+                          <span className="text-gradient font-bold">
+                            pipeline latency
+                          </span>{" "}
+                          reduction system.
+                        </p>
                       </motion.div>
                     </div>
                   </div>
@@ -155,22 +229,31 @@ export default function Projects() {
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
                     <span className="">Process</span>
-                    <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
-                    <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite_reverse]`}
-                    >
-                      {[...tickerWords, ...tickerWords].map((words, index) => (
-                        <li
-                          className="items-center flex gap-4 flex-shrink-0"
-                          key={index}
-                        >
-                          <span className="font-semibold">{words}</span>
-                          <LuConstruction className="text-secondary w-6 h-6" />
-                        </li>
-                      ))}
-                    </ul>
-                    <hr className="w-full border border-secondary/20 opacity-50 mt" />
                   </h3>
+                  <motion.div
+                    className="relative w-full border border-secondary/10 border-[2px] rounded-2xl p-2"
+                    initial={{ borderColor: "var(--color-quaternary)" }}
+                    whileHover={{
+                      borderColor: "var(--color-quaternary-hover)",
+                      transition: {
+                        delay: 0.05,
+                        duration: 0.25,
+                        ease: "easeInOut",
+                      },
+                    }}
+                  >
+                    <div className="flex flex-wrap p-2 w-full items-start justify-center gap-4">
+                      <span>Algorithm</span>
+                      <span>Pathplanner</span>
+                      <span>Choreo</span>
+                      <span>Limelight</span>
+                    </div>
+                    {isOpenWPILib && (
+                      <div>
+                        
+                      </div>
+                    )}
+                  </motion.div>
                 </div>
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
@@ -213,7 +296,11 @@ export default function Projects() {
         viewport={{ once: true }}
         id="ehyg-web"
       >
-        <h2 className="w-full flex flex-col justify-center items-start">
+        <h2
+          className={`w-full flex flex-col justify-center ${
+            isMobile ? `items-center` : `items-start`
+          }`}
+        >
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             Eunhae Youth Group Website
           </span>
@@ -387,7 +474,11 @@ export default function Projects() {
         viewport={{ once: true }}
         id="pdcs-projects"
       >
-        <h2 className="w-full flex flex-col justify-center items-start">
+        <h2
+          className={`w-full flex flex-col justify-center ${
+            isMobile ? `items-center` : `items-start`
+          }`}
+        >
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
             Photographical Drone Computing System
           </span>
