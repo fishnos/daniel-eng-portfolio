@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import Image from "next/image";
 import dronePhoto from "../../public/assets/images/pdcs/drone-photo.jpg";
 import ehygPhoto from "../../public/assets/images/ehyg/ehyg-initial.png";
@@ -8,11 +8,13 @@ import { isMobile } from "react-device-detect";
 import { IoIosArrowUp } from "react-icons/io";
 import { LuConstruction } from "react-icons/lu";
 import { AnimatePresence, motion } from "framer-motion";
+import InfoText from "../../components/InfoText";
 
 export default function Projects() {
   const [isOpenPDCS, setIsOpenPDCS] = useState();
   const [isOpenWPILib, setIsOpenWPILib] = useState();
   const [isOpenEHYG, setIsOpenEHYG] = useState();
+  const [active, setActive] = useState("Automation");
 
   const tickerWords = [
     "Coming soon!",
@@ -27,6 +29,14 @@ export default function Projects() {
     "Coming soon!",
     "Coming soon!",
   ];
+
+  const tabs = ["Automation", "Choreo", "Pathplanner", "Limelight"];
+  const info = {
+    Automation: <InfoText infoTextName={"Automation"}/>,
+    Choreo: <InfoText infoTextName={"Choreo"}/>,
+    Pathplanner: <InfoText infoTextName={"Pathplanner"}/>,
+    Limelight: <InfoText infoTextName={"Limelight"}/>,
+  };
 
   const pdcsTags = ["AI", "LiDAR", "Cinematography"];
   const ehygTags = ["Community", "Front-end", "Volunteering"];
@@ -230,8 +240,30 @@ export default function Projects() {
                   <h3 className="text-gradient text-[30px] font-bold left-0">
                     <span className="">Process</span>
                   </h3>
+                  <div className="p-4 rounded-xl border border-white/20 w-full mx-auto">
+                    <div className="flex gap-8 relative">
+                      {tabs.map((tab) => (
+                        <button
+                          key={tab}
+                          onClick={() => setActive(tab)}
+                          className={`relative z-10 text-sm font-mono transition-colors duration-300 p-1 ${
+                            active === tab ? "text-tertiary font-bold" : "text-secondary/70 font-semibold text-glow-hover"
+                          }`}
+                        >
+                          {tab}
+                          {active === tab && (
+                            <motion.div
+                              layoutId="tab-slider"
+                              className="absolute left-0 top-0 h-full w-full rounded-md border border-tertiary"
+                              transition={{ type: "spring", stiffness: 400, damping: 50 }}
+                            />
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                   <motion.div
-                    className="relative w-full border border-secondary/10 border-[2px] rounded-2xl p-2"
+                    className="relative w-full border border-secondary/10 border-[2px] rounded-2xl p-2 mt-6"
                     initial={{ borderColor: "var(--color-quaternary)" }}
                     whileHover={{
                       borderColor: "var(--color-quaternary-hover)",
@@ -242,17 +274,7 @@ export default function Projects() {
                       },
                     }}
                   >
-                    <div className="flex flex-wrap p-2 w-full items-start justify-center gap-4">
-                      <span>Algorithm</span>
-                      <span>Pathplanner</span>
-                      <span>Choreo</span>
-                      <span>Limelight</span>
-                    </div>
-                    {isOpenWPILib && (
-                      <div>
-                        
-                      </div>
-                    )}
+                    {info[active]}
                   </motion.div>
                 </div>
                 <div className="w-full">

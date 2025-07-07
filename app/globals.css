@@ -10,11 +10,12 @@
   --breakpoint-2xl: 1520;
 
   /* colors */
+  /*TODO: fix the constant names and re-organize the css code*/
   --color-primary: #141616; /* blueish black */
   --color-secondary: #ecf3f4; /* creamy white */
   --color-accent: #cbeff0; /* sea blue */
   --color-accent-hover: #d8ebeb; /* light sea blue */
-  --color-tertiary: #8fe0f1; /* sky cyan */
+  --color-tertiary: #7997f2; /* purplish blue */
   --color-tertiary-hover: #c5e5ec; /* light sky cyan */
   --color-quaternary: rgba(236, 243, 244, 0.15); /* low-opacity secondary */
   --color-quaternary-hover: rgba(
