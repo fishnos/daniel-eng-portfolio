@@ -1,32 +1,36 @@
-import React from 'react'
+import React from "react";
 
 export default function InfoText({ infoTextName }) {
   let infoText;
 
   if (infoTextName === "Automation") {
-    infoText = 
-    <div>
+    infoText = (
+      <div>
         <span className="font-bold text-[25px] text-glow">Automation</span>
         <p>This is the automation info.</p>
-    </div>
+      </div>
+    );
   } else if (infoTextName === "Choreo") {
-    infoText = 
-    <div>
+    infoText = (
+      <div>
         <span className="font-bold text-[25px] text-glow">Choreo</span>
         <p>This is the Choreo info.</p>
-    </div>
+      </div>
+    );
   } else if (infoTextName === "Pathplanner") {
-    infoText = 
-    <div>
+    infoText = (
+      <div>
         <span className="font-bold text-[25px] text-glow">Pathplanner</span>
         <p>This is the Pathplanner info.</p>
-    </div>
+      </div>
+    );
   } else {
-    infoText = 
-    <div>
+    infoText = (
+      <div>
         <span className="font-bold text-[25px] text-glow">Limelight</span>
         <p>This is the Limelight info.</p>
-    </div>
+      </div>
+    );
   }
 
   return infoText;

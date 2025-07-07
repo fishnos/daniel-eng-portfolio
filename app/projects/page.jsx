@@ -263,7 +263,7 @@ export default function Projects() {
                     </div>
                   </div>
                   <motion.div
-                    className="relative w-full border border-secondary/10 border-[2px] rounded-2xl p-2 mt-6"
+                    className="relative w-full border border-secondary/10 border-[2px] rounded-2xl py-2 px-3 mt-6"
                     initial={{ borderColor: "var(--color-quaternary)" }}
                     whileHover={{
                       borderColor: "var(--color-quaternary-hover)",
@@ -274,7 +274,17 @@ export default function Projects() {
                       },
                     }}
                   >
-                    {info[active]}
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={active}
+                        initial={{opacity: 0, x: 15}}
+                        animate={{opacity: 1, x: 0}}
+                        exit={{opacity: 0, x: -3}}
+                        transition={{delay: 0.02, duration: 0.4, ease: "easeInOut"}}
+                      >
+                        {info[active]}
+                      </motion.div>
+                    </AnimatePresence>
                   </motion.div>
                 </div>
                 <div className="w-full">
