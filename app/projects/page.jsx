@@ -4,7 +4,7 @@ import React, { use, useState } from "react";
 import Image from "next/image";
 import dronePhoto from "../../public/assets/images/pdcs/drone-photo.jpg";
 import ehygPhoto from "../../public/assets/images/ehyg/ehyg-initial.png";
-import { isMobile } from "react-device-detect";
+import { isAndroid, isIOS, isMobile } from "react-device-detect";
 import { IoIosArrowUp } from "react-icons/io";
 import { LuConstruction } from "react-icons/lu";
 import { AnimatePresence, motion } from "framer-motion";
@@ -30,11 +30,11 @@ export default function Projects() {
     "Coming soon!",
   ];
 
-  const tabs = ["Automation", "Choreo", "Pathplanner", "Limelight"];
+  const tabs = ["Automation", "Choreo", "PathPlanner", "Limelight"];
   const info = {
     Automation: <InfoText infoTextName={"Automation"}/>,
     Choreo: <InfoText infoTextName={"Choreo"}/>,
-    Pathplanner: <InfoText infoTextName={"Pathplanner"}/>,
+    PathPlanner: <InfoText infoTextName={"PathPlanner"}/>,
     Limelight: <InfoText infoTextName={"Limelight"}/>,
   };
 
@@ -78,7 +78,7 @@ export default function Projects() {
       >
         <h2
           className={`w-full flex flex-col justify-center ${
-            isMobile ? `items-center` : `items-start`
+            (isIOS || isAndroid) || isMobile ? `items-center` : `items-start`
           }`}
         >
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
@@ -330,7 +330,7 @@ export default function Projects() {
       >
         <h2
           className={`w-full flex flex-col justify-center ${
-            isMobile ? `items-center` : `items-start`
+            (isIOS || isAndroid) || isMobile ? `items-center` : `items-start`
           }`}
         >
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
@@ -508,7 +508,7 @@ export default function Projects() {
       >
         <h2
           className={`w-full flex flex-col justify-center ${
-            isMobile ? `items-center` : `items-start`
+            (isIOS || isAndroid) || isMobile ? `items-center` : `items-start`
           }`}
         >
           <span className="font-extrabold text-[30px] text-gradient text-glow-hover">
