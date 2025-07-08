@@ -238,7 +238,7 @@ export default function Projects() {
                 </div>
                 <div className="w-full">
                   <h3 className="text-gradient text-[30px] font-bold left-0">
-                    <span className="">Process</span>
+                    <span className="">How We Did It</span>
                   </h3>
                   <div className="p-4 rounded-xl border border-white/20 w-full mx-auto">
                     <div className="flex gap-8 relative">
@@ -286,26 +286,6 @@ export default function Projects() {
                       </motion.div>
                     </AnimatePresence>
                   </motion.div>
-                </div>
-                <div className="w-full">
-                  <h3 className="text-gradient text-[30px] font-bold left-0">
-                    <span className="">Results</span>
-                    <hr className="w-full border border-secondary/20 opacity-50 mt-4" />
-                    <ul
-                      className={`w-max inline-flex gap-5 text-secondary text-[20px] whitespace-nowrap py-4 animate-[scroll-footer_18s_linear_infinite]`}
-                    >
-                      {[...tickerWords, ...tickerWords].map((words, index) => (
-                        <li
-                          className="items-center flex gap-4 flex-shrink-0"
-                          key={index}
-                        >
-                          <span className="font-semibold">{words}</span>
-                          <LuConstruction className="text-secondary w-6 h-6" />
-                        </li>
-                      ))}
-                    </ul>
-                    <hr className="w-full border border-secondary/20 opacity-50 mt" />
-                  </h3>
                 </div>
               </div>
             </motion.div>
@@ -530,13 +510,6 @@ export default function Projects() {
             (Starting Sept. 2025)
           </span>
         </h2>
-        <div className="w-full flex items-center justify-center">
-          <Image
-            className="relative w-[100%] md:w-[90%] h-auto mt-5 border border-secondary/15 border-[5px] rounded-2xl"
-            src={dronePhoto}
-            alt="drone-photo"
-          />
-        </div>
         <button
           onClick={() => setIsOpenPDCS(!isOpenPDCS)}
           className="w-full flex justify-center items-center"
